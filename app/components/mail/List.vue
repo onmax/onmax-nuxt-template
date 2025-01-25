@@ -29,7 +29,7 @@ function getBadgeVariantFromLabel(label: string) {
           v-for="item of items"
           :key="item.id"
           :class="cn(
-            'flex flex-col items-start gap-8 f-rounded border p-12 text-left f-text-xs transition-all hover:bg-accent',
+            'flex flex-col items-start gap-8 f-rounded-xs border p-12 text-left f-text-xs transition-all hover:bg-accent',
             selectedMail === item.id && 'bg-muted',
           )"
           @click="selectedMail = item.id"

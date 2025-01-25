@@ -27,9 +27,9 @@ const showModalTheme = ref(false)
             size="lg"
             class="data-open:bg-sidebar-accent data-open:text-sidebar-accent-foreground"
           >
-            <Avatar class="h-32 w-32 f-rounded">
+            <Avatar class="h-32 w-32 f-rounded-xs">
               <AvatarImage :src="user.avatar" :alt="user.name" />
-              <AvatarFallback class="f-rounded">
+              <AvatarFallback class="f-rounded-xs">
                 CN
               </AvatarFallback>
             </Avatar>
@@ -41,15 +41,15 @@ const showModalTheme = ref(false)
           </SidebarMenuButton>
         </DropdownMenuTrigger>
         <DropdownMenuContent
-          class="min-w-224 w-[--radix-dropdown-menu-trigger-width] f-rounded"
+          class="min-w-224 w-[--radix-dropdown-menu-trigger-width] f-rounded-xs"
           :side="isMobile ? 'bottom' : 'right'"
           align="end"
         >
           <DropdownMenuLabel class="p-0 font-normal">
             <div class="flex items-center gap-8 px-4 py-6 text-left f-text-xs">
-              <Avatar class="h-32 w-32 f-rounded">
+              <Avatar class="h-32 w-32 f-rounded-xs">
                 <AvatarImage :src="user.avatar" :alt="user.name" />
-                <AvatarFallback class="f-rounded">
+                <AvatarFallback class="f-rounded-xs">
                   CN
                 </AvatarFallback>
               </Avatar>

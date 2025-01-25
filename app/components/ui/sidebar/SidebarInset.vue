@@ -11,7 +11,7 @@ const props = defineProps<{
   <main
     :class="cn(
       'overflow-x-auto relative flex min-h-svh flex-1 flex-col bg-background',
-      'peer-data-[variant=inset]:min-h-[calc(100svh-1rem)] md:peer-data-[variant=inset]:m-8 md:peer-data-[state=collapsed]:peer-data-[variant=inset]:ml-8 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:f-rounded md:peer-data-[variant=inset][&>header]:rounded-t-xl md:peer-data-[variant=inset]:shadow',
+      'peer-data-[variant=inset]:min-h-[calc(100svh-1rem)] md:peer-data-[variant=inset]:m-8 md:peer-data-[state=collapsed]:peer-data-[variant=inset]:ml-8 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:f-rounded-xs md:peer-data-[variant=inset][&>header]:rounded-t-xl md:peer-data-[variant=inset]:shadow',
       props.class,
     )"
   >

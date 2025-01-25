@@ -30,7 +30,7 @@ const color = useColorMode()
 const onSubmit = handleSubmit((values) => {
   toast({
     title: 'You submitted the following values:',
-    description: h('pre', { class: 'mt-8 w-340 f-rounded bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
+    description: h('pre', { class: 'mt-8 w-340 f-rounded-xs bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
   })
   if (values.theme === 'dark') {
     color.preference = 'dark'
@@ -101,19 +101,19 @@ const onSubmit = handleSubmit((values) => {
               <FormControl>
                 <RadioGroupItem value="light" class="sr-only" />
               </FormControl>
-              <div class="items-center border-2 border-muted p-4 f-rounded hover:border-accent">
-                <div class="bg-[#ecedef] p-8 f-rounded space-y-8">
-                  <div class="bg-white p-8 shadow-sm f-rounded space-y-8">
-                    <div class="h-8 w-80 bg-[#ecedef] f-rounded" />
-                    <div class="h-8 w-100 bg-[#ecedef] f-rounded" />
+              <div class="items-center border-2 border-muted p-4 f-rounded-xs hover:border-accent">
+                <div class="bg-[#ecedef] p-8 f-rounded-xs space-y-8">
+                  <div class="bg-white p-8 shadow-sm f-rounded-xs space-y-8">
+                    <div class="h-8 w-80 bg-[#ecedef] f-rounded-xs" />
+                    <div class="h-8 w-100 bg-[#ecedef] f-rounded-xs" />
                   </div>
-                  <div class="flex items-center bg-white p-8 shadow-sm f-rounded space-x-8">
+                  <div class="flex items-center bg-white p-8 shadow-sm f-rounded-xs space-x-8">
                     <div class="h-16 w-16 rounded-full bg-[#ecedef]" />
-                    <div class="h-8 w-100 bg-[#ecedef] f-rounded" />
+                    <div class="h-8 w-100 bg-[#ecedef] f-rounded-xs" />
                   </div>
-                  <div class="flex items-center bg-white p-8 shadow-sm f-rounded space-x-8">
+                  <div class="flex items-center bg-white p-8 shadow-sm f-rounded-xs space-x-8">
                     <div class="h-16 w-16 rounded-full bg-[#ecedef]" />
-                    <div class="h-8 w-100 bg-[#ecedef] f-rounded" />
+                    <div class="h-8 w-100 bg-[#ecedef] f-rounded-xs" />
                   </div>
                 </div>
               </div>
@@ -127,19 +127,19 @@ const onSubmit = handleSubmit((values) => {
               <FormControl>
                 <RadioGroupItem value="dark" class="sr-only" />
               </FormControl>
-              <div class="items-center border-2 border-muted bg-popover p-4 f-rounded hover:bg-accent hover:text-accent-foreground">
-                <div class="bg-slate-950 p-8 f-rounded space-y-8">
-                  <div class="bg-slate-800 p-8 shadow-sm f-rounded space-y-8">
-                    <div class="h-8 w-80 bg-slate-400 f-rounded" />
-                    <div class="h-8 w-100 bg-slate-400 f-rounded" />
+              <div class="items-center border-2 border-muted bg-popover p-4 f-rounded-xs hover:bg-accent hover:text-accent-foreground">
+                <div class="bg-slate-950 p-8 f-rounded-xs space-y-8">
+                  <div class="bg-slate-800 p-8 shadow-sm f-rounded-xs space-y-8">
+                    <div class="h-8 w-80 bg-slate-400 f-rounded-xs" />
+                    <div class="h-8 w-100 bg-slate-400 f-rounded-xs" />
                   </div>
-                  <div class="flex items-center bg-slate-800 p-8 shadow-sm f-rounded space-x-8">
+                  <div class="flex items-center bg-slate-800 p-8 shadow-sm f-rounded-xs space-x-8">
                     <div class="h-16 w-16 rounded-full bg-slate-400" />
-                    <div class="h-8 w-100 bg-slate-400 f-rounded" />
+                    <div class="h-8 w-100 bg-slate-400 f-rounded-xs" />
                   </div>
-                  <div class="flex items-center bg-slate-800 p-8 shadow-sm f-rounded space-x-8">
+                  <div class="flex items-center bg-slate-800 p-8 shadow-sm f-rounded-xs space-x-8">
                     <div class="h-16 w-16 rounded-full bg-slate-400" />
-                    <div class="h-8 w-100 bg-slate-400 f-rounded" />
+                    <div class="h-8 w-100 bg-slate-400 f-rounded-xs" />
                   </div>
                 </div>
               </div>

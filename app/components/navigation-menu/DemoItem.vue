@@ -11,7 +11,7 @@ defineProps<{
       <a
         :href="href"
         :class="cn(
-          'block select-none space-y-4 f-rounded p-12 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
+          'block select-none space-y-4 f-rounded-xs p-12 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
           $attrs.class ?? '',
         )"
       >

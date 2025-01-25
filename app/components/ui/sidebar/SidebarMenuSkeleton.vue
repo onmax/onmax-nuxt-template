@@ -17,11 +17,11 @@ const width = computed(() => {
 <template>
   <div
     data-sidebar="menu-skeleton"
-    :class="cn('f-rounded h-32 flex gap-8 px-8 items-center', props.class)"
+    :class="cn('f-rounded-xs h-32 flex gap-8 px-8 items-center', props.class)"
   >
     <Skeleton
       v-if="showIcon"
-      class="size-16 f-rounded"
+      class="size-16 f-rounded-xs"
       data-sidebar="menu-skeleton-icon"
     />
 

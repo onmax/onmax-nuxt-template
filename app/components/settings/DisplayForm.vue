@@ -52,7 +52,7 @@ const { handleSubmit } = useForm({
 const onSubmit = handleSubmit((values) => {
   toast({
     title: 'You submitted the following values:',
-    description: h('pre', { class: 'mt-8 w-340 f-rounded bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
+    description: h('pre', { class: 'mt-8 w-340 f-rounded-xs bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
   })
 })
 </script>

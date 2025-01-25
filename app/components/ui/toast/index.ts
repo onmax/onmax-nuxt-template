@@ -15,7 +15,7 @@ export { default as ToastViewport } from './ToastViewport.vue'
 export { toast, useToast } from './use-toast'
 
 export const toastVariants = cva(
-  'group pointer-events-auto relative flex w-full items-center justify-between space-x-8 overflow-hidden f-rounded border p-16 pr-24 shadow-512 transition-all data-[swipe=cancel]:translate-x-0 data-[swipe=end]:translate-x-[var(--radix-toast-swipe-end-x)] data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[swipe=move]:transition-none data-open:animate-in data-closed:animate-out data-[swipe=end]:animate-out data-closed:fade-out-80 data-closed:slide-out-to-right-full data-open:slide-in-from-top-full data-open:sm:slide-in-from-bottom-full',
+  'group pointer-events-auto relative flex w-full items-center justify-between space-x-8 overflow-hidden f-rounded-xs border p-16 pr-24 shadow-512 transition-all data-[swipe=cancel]:translate-x-0 data-[swipe=end]:translate-x-[var(--radix-toast-swipe-end-x)] data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[swipe=move]:transition-none data-open:animate-in data-closed:animate-out data-[swipe=end]:animate-out data-closed:fade-out-80 data-closed:slide-out-to-right-full data-open:slide-in-from-top-full data-open:sm:slide-in-from-bottom-full',
   {
     variants: {
       variant: {

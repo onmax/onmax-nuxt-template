@@ -29,7 +29,7 @@ const { handleSubmit } = useForm({
 const onSubmit = handleSubmit((values) => {
   toast({
     title: 'You submitted the following values:',
-    description: h('pre', { class: 'mt-8 w-340 f-rounded bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
+    description: h('pre', { class: 'mt-8 w-340 f-rounded-xs bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
   })
 })
 </script>
@@ -89,7 +89,7 @@ const onSubmit = handleSubmit((values) => {
       </h3>
       <div class="space-y-80">
         <FormField v-slot="{ handleChange, value }" type="checkbox" name="communication_emails">
-          <FormItem class="flex flex-row items-center justify-between border p-16 f-rounded">
+          <FormItem class="flex flex-row items-center justify-between border p-16 f-rounded-xs">
             <div class="space-y-2">
               <FormLabel class="text-base">
                 Communication emails
@@ -108,7 +108,7 @@ const onSubmit = handleSubmit((values) => {
         </FormField>
 
         <FormField v-slot="{ handleChange, value }" type="checkbox" name="marketing_emails">
-          <FormItem class="flex flex-row items-center justify-between border p-16 f-rounded">
+          <FormItem class="flex flex-row items-center justify-between border p-16 f-rounded-xs">
             <div class="space-y-2">
               <FormLabel class="text-base">
                 Marketing emails
@@ -127,7 +127,7 @@ const onSubmit = handleSubmit((values) => {
         </FormField>
 
         <FormField v-slot="{ handleChange, value }" type="checkbox" name="social_emails">
-          <FormItem class="flex flex-row items-center justify-between border p-16 f-rounded">
+          <FormItem class="flex flex-row items-center justify-between border p-16 f-rounded-xs">
             <div class="space-y-2">
               <FormLabel class="text-base">
                 Social emails
@@ -146,7 +146,7 @@ const onSubmit = handleSubmit((values) => {
         </FormField>
 
         <FormField v-slot="{ handleChange, value }" type="checkbox" name="security_emails">
-          <FormItem class="flex flex-row items-center justify-between border p-16 f-rounded">
+          <FormItem class="flex flex-row items-center justify-between border p-16 f-rounded-xs">
             <div class="space-y-2">
               <FormLabel class="text-base">
                 Security emails
