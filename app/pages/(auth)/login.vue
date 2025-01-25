@@ -1,6 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
   layout: 'blank',
+  auth: false,
 })
 </script>
 
@@ -12,7 +13,7 @@ definePageMeta({
           Welcome back
         </h1>
         <p class="text-balance text-muted-foreground f-text-xs">
-          Login with your Apple or Google account
+          Login with your GitHub account
         </p>
       </div>
       <AuthSignIn />

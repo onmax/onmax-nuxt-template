@@ -44,7 +44,7 @@ const tags = Array.from({ length: 50 }).map(
         </CardHeader>
         <CardContent>
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
-            <ScrollArea class="h-288 w-192 border f-rounded">
+            <ScrollArea class="h-288 w-192 border f-rounded-xs">
               <div class="p-16">
                 <h4 class="mb-16 font-medium leading-none f-text-xs">
                   Tags

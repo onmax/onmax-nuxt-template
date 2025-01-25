@@ -1,6 +1,7 @@
 <script setup>
 definePageMeta({
   layout: 'blank',
+  auth: false,
 })
 
 const router = useRouter()

@@ -6,37 +6,38 @@ let _auth: ReturnType<typeof betterAuth>
 export function serverAuth() {
   const { github } = useRuntimeConfig()
 
-  if (!_auth) {
-    _auth = betterAuth({
-      database: {
-        dialect: new D1Dialect({ database: hubDatabase() }),
-        type: 'sqlite',
+  if (_auth)
+    return _auth
+
+  _auth = betterAuth({
+    database: {
+      dialect: new D1Dialect({ database: hubDatabase() }),
+      type: 'sqlite',
+    },
+    secondaryStorage: {
+      get: key => hubKV().getItemRaw(`_auth:${key}`),
+      set: (key, value, ttl) => {
+        return hubKV().set(`_auth:${key}`, value, { ttl })
       },
-      secondaryStorage: {
-        get: key => hubKV().getItemRaw(`_auth:${key}`),
-        set: (key, value, ttl) => {
-          return hubKV().set(`_auth:${key}`, value, { ttl })
-        },
-        delete: key => hubKV().del(`_auth:${key}`),
+      delete: key => hubKV().del(`_auth:${key}`),
+    },
+    baseURL: getBaseURL(),
+    emailAndPassword: { enabled: true },
+    socialProviders: { github },
+    account: {
+      accountLinking: {
+        enabled: true,
       },
-      baseURL: getBaseURL(),
-      emailAndPassword: { enabled: true },
-      socialProviders: { github },
-      account: {
-        accountLinking: {
-          enabled: true,
-        },
-      },
-      plugins: [anonymous(), admin()],
-    })
-  }
+    },
+    plugins: [anonymous(), admin()],
+  })
   return _auth
 }
 
 function getBaseURL() {
   let betterAuthUrl = ''
   try {
-    betterAuthUrl = useRuntimeConfig().betterAuthUrl
+    betterAuthUrl = useRuntimeConfig().betterAuth.url
   }
   // eslint-disable-next-line unused-imports/no-unused-vars
   catch (_e) {

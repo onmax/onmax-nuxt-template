@@ -24,7 +24,7 @@ async function onSubmit(event: Event) {
           placeholder="name@example.com"
           type="email"
           auto-capitalize="none"
-          auto-complete="email"
+          autocomplete="email"
           auto-correct="off"
           :disabled="isLoading"
         />

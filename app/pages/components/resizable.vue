@@ -44,7 +44,7 @@
             <ResizablePanelGroup
               id="demo-group-4"
               direction="horizontal"
-              class="max-w-448 border f-rounded"
+              class="max-w-448 border f-rounded-xs"
             >
               <ResizablePanel id="demo-panel-1" :default-size="50">
                 <div class="h-200 flex items-center justify-center p-24">
@@ -80,7 +80,7 @@
             <ResizablePanelGroup
               id="vertical-demo-group-4"
               direction="vertical"
-              class="max-w-448 min-h-200 border f-rounded"
+              class="max-w-448 min-h-200 border f-rounded-xs"
             >
               <ResizablePanel id="vertical-demo-panel-1" :default-size="25">
                 <div class="h-full flex items-center justify-center p-24">

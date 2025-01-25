@@ -52,7 +52,7 @@ const value = ref({
         </CardHeader>
         <CardContent>
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
-            <RangeCalendar v-model="value" class="border f-rounded" />
+            <RangeCalendar v-model="value" class="border f-rounded-xs" />
           </div>
         </CardContent>
       </Card>

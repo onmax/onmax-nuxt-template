@@ -18,10 +18,11 @@ export function useAuth() {
 
   const client = createAuthClient({ baseURL: url.origin, fetchOptions: { headers } })
 
-  const options = defu(useRuntimeConfig().public.auth as Partial<RuntimeAuthConfig>, {
-    redirectUserTo: '/',
-    redirectGuestTo: '/',
-  })
+  const options = defu(
+    useRuntimeConfig().public.auth as Partial<RuntimeAuthConfig>,
+    { redirectUserTo: '/', redirectGuestTo: '/login' },
+  )
+
   const session = useState<InferSessionFromClient<ClientOptions> | null>('auth:session', () => null)
   const user = useState<InferUserFromClient<ClientOptions> | null>('auth:user', () => null)
   const sessionFetching = import.meta.server ? ref(false) : useState('auth:sessionFetching', () => false)

@@ -34,15 +34,18 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    betterAuthUrl: env.BETTER_AUTH_URL,
+    betterAuth: {
+      url: env.BETTER_AUTH_URL,
+      secret: env.BETTER_AUTH_SECRET,
+    },
     github: {
       clientId: env.GITHUB_CLIENT_ID!,
       clientSecret: env.GITHUB_CLIENT_SECRET!,
     },
     public: {
       auth: {
-        redirectUserTo: '/user',
-        redirectGuestTo: '/',
+        redirectUserTo: '/',
+        redirectGuestTo: '/login',
       },
     },
   },

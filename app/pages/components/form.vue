@@ -31,7 +31,7 @@ const { isFieldDirty, handleSubmit } = useForm({
 
 const onSubmit = handleSubmit((values) => {
   toast('You submitted the following values:', {
-    description: h('pre', { class: 'mt-8 w-340 f-rounded bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
+    description: h('pre', { class: 'mt-8 w-340 f-rounded-xs bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
   })
 })
 </script>
@@ -121,7 +121,7 @@ const onSubmit = handleSubmit((values) => {
                 </FormItem>
               </FormField>
               <FormField v-slot="{ value, handleChange }" type="checkbox" name="mobile">
-                <FormItem class="flex flex-row items-start gap-x-3 border p-16 shadow f-rounded space-y-0">
+                <FormItem class="flex flex-row items-start gap-x-3 border p-16 shadow f-rounded-xs space-y-0">
                   <FormControl>
                     <Checkbox :checked="value" @update:checked="handleChange" />
                   </FormControl>

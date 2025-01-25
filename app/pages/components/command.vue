@@ -52,7 +52,7 @@ function handleOpenChange() {
         </CardHeader>
         <CardContent>
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
-            <Command class="shadow-448 max-w-450 border f-rounded">
+            <Command class="shadow-448 max-w-450 border f-rounded-xs">
               <CommandInput placeholder="Type a command or search..." />
               <CommandList>
                 <CommandEmpty>No results found.</CommandEmpty>

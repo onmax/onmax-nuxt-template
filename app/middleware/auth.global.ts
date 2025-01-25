@@ -2,10 +2,6 @@ import { defu } from 'defu'
 
 type MiddlewareOptions = false | {
   /**
-   * Only apply auth middleware to guest or user
-   */
-  only?: 'guest' | 'user'
-  /**
    * Redirect authenticated user to this route
    */
   redirectUserTo?: string
@@ -33,10 +29,10 @@ export default defineNuxtRouteMiddleware(async (to) => {
     return
   }
   const { loggedIn, options, fetchSession } = useAuth()
-  const { only, redirectUserTo, redirectGuestTo } = defu(to.meta?.auth, options)
+  const { redirectUserTo, redirectGuestTo } = defu(to.meta?.auth, options)
 
   // If guest mode, redirect if authenticated
-  if (only === 'guest' && loggedIn.value) {
+  if (loggedIn.value) {
     // Avoid infinite redirect
     if (to.path === redirectUserTo) {
       return

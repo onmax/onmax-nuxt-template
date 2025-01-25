@@ -46,7 +46,7 @@ const value = ref(today(getLocalTimeZone())) as Ref<DateValue>
         </CardHeader>
         <CardContent>
           <div class="w-full flex items-center justify-center gap-16 overflow-hidden">
-            <Calendar v-model="value" weekday-format="short" class="border f-rounded" />
+            <Calendar v-model="value" weekday-format="short" class="border f-rounded-xs" />
           </div>
         </CardContent>
       </Card>

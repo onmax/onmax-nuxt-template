@@ -40,7 +40,7 @@
           <CardTitle>Ratio 16/9</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="mx-auto w-full flex items-center justify-center overflow-hidden f-rounded md:w-1200px">
+          <div class="mx-auto w-full flex items-center justify-center overflow-hidden f-rounded-xs md:w-1200px">
             <AspectRatio :ratio="16 / 9">
               <img
                 class="h-full w-full object-cover"
@@ -56,7 +56,7 @@
           <CardTitle>Ratio 1/1</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="mx-auto w-full flex items-center justify-center overflow-hidden f-rounded md:w-1200px">
+          <div class="mx-auto w-full flex items-center justify-center overflow-hidden f-rounded-xs md:w-1200px">
             <AspectRatio :ratio="1">
               <img
                 class="h-full w-full object-cover"

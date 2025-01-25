@@ -85,7 +85,7 @@ function handleCompleteSeparator(e: string[]) {
               <PinInputGroup class="gap-4">
                 <template v-for="(id, index) in 5" :key="id">
                   <PinInputInput
-                    class="border f-rounded"
+                    class="border f-rounded-xs"
                     :index="index"
                   />
                   <template v-if="index !== 4">

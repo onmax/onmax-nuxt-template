@@ -55,14 +55,14 @@
                   </Button>
                 </div>
               </CollapsibleTrigger>
-              <div class="border px-16 py-12 font-mono f-text-xs f-rounded">
+              <div class="border px-16 py-12 font-mono f-text-xs f-rounded-xs">
                 @radix-ui/primitives
               </div>
               <CollapsibleContent class="space-y-8">
-                <div class="border px-16 py-12 font-mono f-text-xs f-rounded">
+                <div class="border px-16 py-12 font-mono f-text-xs f-rounded-xs">
                   @radix-ui/colors
                 </div>
-                <div class="border px-16 py-12 font-mono f-text-xs f-rounded">
+                <div class="border px-16 py-12 font-mono f-text-xs f-rounded-xs">
                   @stitches/react
                 </div>
               </CollapsibleContent>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
   layout: 'blank',
+  auth: false,
 })
 </script>
 
@@ -8,7 +9,7 @@ definePageMeta({
   <div class="flex flex-col items-center justify-center gap-24 bg-muted p-24 min-h-svh md:p-40">
     <div class="max-w-320 w-full flex flex-col gap-24">
       <NuxtLink to="#" class="flex items-center self-center gap-8 font-medium">
-        <div class="h-24 w-24 flex items-center justify-center bg-primary text-primary-foreground f-rounded">
+        <div class="h-24 w-24 flex items-center justify-center bg-primary text-primary-foreground f-rounded-xs">
           <Icon name="i-lucide-gallery-vertical-end" class-name="size-16" />
         </div>
         Acme Inc.

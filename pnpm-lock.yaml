@@ -44,6 +44,9 @@ importers:
       '@antfu/eslint-config':
         specifier: ^4.1.0
         version: 4.1.0(@typescript-eslint/utils@8.21.0(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3))(@unocss/eslint-plugin@65.4.3(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3))(@vue/compiler-sfc@3.5.13)(eslint-plugin-format@1.0.1(eslint@9.19.0(jiti@2.4.2)))(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3)
+      '@iconify-json/lucide':
+        specifier: ^1.2.24
+        version: 1.2.24
       '@nuxt/eslint':
         specifier: ^0.7.5
         version: 0.7.5(@vue/compiler-sfc@3.5.13)(eslint-plugin-format@1.0.1(eslint@9.19.0(jiti@2.4.2)))(eslint@9.19.0(jiti@2.4.2))(magicast@0.3.5)(rollup@4.29.1)(typescript@5.7.3)(vite@6.0.11(@types/node@22.10.2)(jiti@2.4.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))
@@ -1019,6 +1022,9 @@ packages:
   '@humanwhocodes/retry@0.4.1':
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
+
+  '@iconify-json/lucide@1.2.24':
+    resolution: {integrity: sha512-MZ61WEAMlVaM3BkuZR4vVw63hPVdaeF5KQEogLcy5qh+zCXLcSpKOyMyoylSTnYUlcKsqTeBsUzRxPsvxe+P3g==}
 
   '@iconify/collections@1.0.499':
     resolution: {integrity: sha512-sCw5tWeBOrtq0d/KZIVepRYe5lD5sITWhza0XUxqKuOG5XU9rr30DixqbSvnA532ruJBTS2wHS7u+Z/m3b/GPw==}
@@ -6743,6 +6749,10 @@ snapshots:
   '@humanwhocodes/retry@0.3.1': {}
 
   '@humanwhocodes/retry@0.4.1': {}
+
+  '@iconify-json/lucide@1.2.24':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify/collections@1.0.499':
     dependencies:

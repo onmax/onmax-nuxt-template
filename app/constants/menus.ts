@@ -35,11 +35,6 @@ export const navMenu: NavMenu[] = [
             link: '/login',
           },
           {
-            title: 'Login Basic',
-            icon: 'i-lucide-circle',
-            link: '/login-basic',
-          },
-          {
             title: 'Register',
             icon: 'i-lucide-circle',
             link: '/register',

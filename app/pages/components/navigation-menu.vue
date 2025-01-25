@@ -89,7 +89,7 @@ const components: { title: string, href: string, description: string }[] = [
                       <li class="row-span-3">
                         <NavigationMenuLink as-child>
                           <NuxtLink
-                            class="focus:shadow-448 h-full w-full flex flex-col select-none justify-end from-muted/50 to-muted bg-gradient-to-b p-24 no-underline outline-none f-rounded"
+                            class="focus:shadow-448 h-full w-full flex flex-col select-none justify-end from-muted/50 to-muted bg-gradient-to-b p-24 no-underline outline-none f-rounded-xs"
                             to="/"
                           >
                             <img src="https://www.radix-vue.com/logo.svg" class="h-24 w-24" alt="radix-logo">

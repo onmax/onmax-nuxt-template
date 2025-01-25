@@ -42,7 +42,7 @@
         <CardContent>
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <ContextMenu>
-              <ContextMenuTrigger class="h-150 w-300 flex items-center justify-center border border-dashed f-text-xs f-rounded">
+              <ContextMenuTrigger class="h-150 w-300 flex items-center justify-center border border-dashed f-text-xs f-rounded-xs">
                 Right click here
               </ContextMenuTrigger>
               <ContextMenuContent class="w-256">
