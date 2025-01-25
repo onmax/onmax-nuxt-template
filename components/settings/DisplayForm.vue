@@ -52,17 +52,17 @@ const { handleSubmit } = useForm({
 const onSubmit = handleSubmit((values) => {
   toast({
     title: 'You submitted the following values:',
-    description: h('pre', { class: 'mt-2 w-[340px] rounded-md bg-slate-950 p-4' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
+    description: h('pre', { class: 'mt-8 w-[340px] f-rounded bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
   })
 })
 </script>
 
 <template>
   <div>
-    <h3 class="text-lg font-medium">
+    <h3 class="f-text-md font-medium">
       Display
     </h3>
-    <p class="text-sm text-muted-foreground">
+    <p class="f-text-xs text-muted-foreground">
       Turn items on or off to control what's displayed in the app.
     </p>
   </div>
@@ -70,7 +70,7 @@ const onSubmit = handleSubmit((values) => {
   <form @submit="onSubmit">
     <FormField name="items">
       <FormItem>
-        <div class="mb-4">
+        <div class="mb-16">
           <FormLabel class="text-base">
             Sidebar
           </FormLabel>
@@ -80,7 +80,7 @@ const onSubmit = handleSubmit((values) => {
         </div>
 
         <FormField v-for="item in items" v-slot="{ value, handleChange }" :key="item.id" name="items">
-          <FormItem :key="item.id" class="flex flex-row items-start space-x-3 space-y-0">
+          <FormItem :key="item.id" class="flex flex-row items-start space-x-42 space-y-0">
             <FormControl>
               <Checkbox
                 :checked="value.includes(item.id)"
@@ -100,7 +100,7 @@ const onSubmit = handleSubmit((values) => {
       </FormItem>
     </FormField>
 
-    <div class="mt-4 flex justify-start">
+    <div class="mt-16 flex justify-start">
       <Button type="submit">
         Update display
       </Button>

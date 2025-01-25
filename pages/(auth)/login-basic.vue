@@ -5,18 +5,18 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center gap-6 bg-muted p-6 min-h-svh md:p-10">
-    <div class="max-w-sm w-full flex flex-col gap-6">
-      <NuxtLink to="#" class="flex items-center self-center gap-2 font-medium">
-        <div class="h-6 w-6 flex items-center justify-center rounded-md bg-primary text-primary-foreground">
-          <Icon name="i-lucide-gallery-vertical-end" class="size-4" />
+  <div class="flex flex-col items-center justify-center gap-24 bg-muted p-24 min-h-svh md:p-40">
+    <div class="max-w-320 w-full flex flex-col gap-24">
+      <NuxtLink to="#" class="flex items-center self-center gap-8 font-medium">
+        <div class="h-24 w-24 flex items-center justify-center f-rounded bg-primary text-primary-foreground">
+          <Icon name="i-lucide-gallery-vertical-end" class="size-16" />
         </div>
         Acme Inc.
       </NuxtLink>
-      <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-24">
         <Card>
           <CardHeader class="text-center">
-            <CardTitle class="text-xl">
+            <CardTitle class="f-text-lg">
               Welcome back
             </CardTitle>
             <CardDescription>
@@ -27,7 +27,7 @@ definePageMeta({
             <AuthSignIn />
           </CardContent>
         </Card>
-        <div class="text-center text-balance text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary">
+        <div class="text-center text-balance f-text-2xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary">
           By clicking continue, you agree to our <a href="#">Terms of Service</a>
           and <a href="#">Privacy Policy</a>.
         </div>

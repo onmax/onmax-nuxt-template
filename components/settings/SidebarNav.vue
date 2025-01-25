@@ -33,7 +33,7 @@ const sidebarNavItems: Item[] = [
 </script>
 
 <template>
-  <nav class="flex lg:flex-col space-x-2 lg:space-x-0 lg:space-y-1">
+  <nav class="flex lg:flex-col space-x-8 lg:space-x-0 lg:space-y-4">
     <Button
       v-for="item in sidebarNavItems"
       :key="item.title"

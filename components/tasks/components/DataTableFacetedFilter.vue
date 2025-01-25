@@ -24,22 +24,22 @@ const selectedValues = computed(() => new Set(props.column?.getFilterValue() as 
 <template>
   <Popover>
     <PopoverTrigger as-child>
-      <Button variant="outline" size="sm" class="h-8 border-dashed">
-        <Icon name="i-radix-icons-plus-circled" class="mr-2 h-4 w-4" />
+      <Button variant="outline" size="sm" class="h-32 border-dashed">
+        <Icon name="i-radix-icons-plus-circled" class="mr-8 h-16 w-16" />
         {{ title }}
         <template v-if="selectedValues.size > 0">
-          <Separator orientation="vertical" class="mx-2 h-4" />
+          <Separator orientation="vertical" class="mx-8 h-16" />
           <Badge
             variant="secondary"
-            class="rounded-sm px-1 font-normal lg:hidden"
+            class="f-rounded px-4 font-normal lg:hidden"
           >
             {{ selectedValues.size }}
           </Badge>
-          <div class="hidden lg:flex space-x-1">
+          <div class="hidden lg:flex space-x-4">
             <Badge
               v-if="selectedValues.size > 2"
               variant="secondary"
-              class="rounded-sm px-1 font-normal"
+              class="f-rounded px-4 font-normal"
             >
               {{ selectedValues.size }} selected
             </Badge>
@@ -50,7 +50,7 @@ const selectedValues = computed(() => new Set(props.column?.getFilterValue() as 
                   .filter((option: any) => selectedValues.has(option.value))"
                 :key="item.value"
                 variant="secondary"
-                class="rounded-sm px-1 font-normal"
+                class="f-rounded px-4 font-normal"
               >
                 {{ item.label }}
               </Badge>
@@ -88,17 +88,17 @@ const selectedValues = computed(() => new Set(props.column?.getFilterValue() as 
             >
               <div
                 :class="cn(
-                  'mr-2 flex h-4 w-4 items-center justify-center rounded-sm border border-primary',
+                  'mr-8 flex h-16 w-16 items-center justify-center f-rounded border border-primary',
                   selectedValues.has(option.value)
                     ? 'bg-primary text-primary-foreground'
                     : 'opacity-50 [&_svg]:invisible',
                 )"
               >
-                <Icon name="i-radix-icons-check" :class="cn('h-4 w-4')" />
+                <Icon name="i-radix-icons-check" :class="cn('h-16 w-16')" />
               </div>
-              <component :is="option.icon" v-if="option.icon" class="mr-2 h-4 w-4 text-muted-foreground" />
+              <component :is="option.icon" v-if="option.icon" class="mr-8 h-16 w-16 text-muted-foreground" />
               <span>{{ option.label }}</span>
-              <span v-if="facets?.get(option.value)" class="ml-auto h-4 w-4 flex items-center justify-center text-xs font-mono">
+              <span v-if="facets?.get(option.value)" class="ml-auto h-16 w-16 flex items-center justify-center f-text-2xs font-mono">
                 {{ facets.get(option.value) }}
               </span>
             </CommandItem>

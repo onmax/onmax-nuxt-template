@@ -22,9 +22,9 @@ const columns = computed(() => props.table.getAllColumns()
       <Button
         variant="outline"
         size="sm"
-        class="ml-auto hidden h-8 lg:flex"
+        class="ml-auto hidden h-32 lg:flex"
       >
-        <Icon name="i-radix-icons-mixer-horizontal" class="mr-2 h-4 w-4" />
+        <Icon name="i-radix-icons-mixer-horizontal" class="mr-8 h-16 w-16" />
         View
       </Button>
     </DropdownMenuTrigger>

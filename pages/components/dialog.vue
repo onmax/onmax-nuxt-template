@@ -24,28 +24,28 @@ async function handleCopyLink() {
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
-    <div class="grid gap-2">
+  <div class="flex flex-col gap-16">
+    <div class="grid gap-8">
       <div>
-        <h2 class="text-2xl font-bold tracking-tight">
+        <h2 class="f-text-xl font-bold tracking-tight">
           Dialog
         </h2>
         <p class="text-muted-foreground">
           A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.
         </p>
       </div>
-      <div class="flex gap-2">
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+      <div class="flex gap-8">
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.shadcn-vue.com/docs/components/dialog"
             external
             target="_blank"
           >
-            <span class="i-radix-icons-code mr-2" />
+            <span class="i-radix-icons-code mr-8" />
             Component Source
           </NuxtLink>
         </Button>
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.radix-vue.com/components/dialog"
             external
@@ -56,13 +56,13 @@ async function handleCopyLink() {
         </Button>
       </div>
     </div>
-    <div class="grid gap-4 md:grid-cols-2">
+    <div class="grid gap-16 md:grid-cols-2">
       <Card class="w-full">
         <CardHeader>
           <CardTitle>Basic</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <Dialog>
               <DialogTrigger as-child>
                 <Button variant="outline">
@@ -76,14 +76,14 @@ async function handleCopyLink() {
                     Make changes to your profile here. Click save when you're done.
                   </DialogDescription>
                 </DialogHeader>
-                <div class="grid gap-4 py-4">
-                  <div class="grid grid-cols-4 items-center gap-4">
+                <div class="grid gap-16 py-16">
+                  <div class="grid grid-cols-4 items-center gap-16">
                     <Label for="name" class="text-right">
                       Name
                     </Label>
                     <Input id="name" value="Pedro Duarte" class="col-span-3" />
                   </div>
-                  <div class="grid grid-cols-4 items-center gap-4">
+                  <div class="grid grid-cols-4 items-center gap-16">
                     <Label for="username" class="text-right">
                       Username
                     </Label>
@@ -105,22 +105,22 @@ async function handleCopyLink() {
           <CardTitle>Custom close button</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <Dialog>
               <DialogTrigger as-child>
                 <Button variant="outline">
                   Share
                 </Button>
               </DialogTrigger>
-              <DialogContent class="sm:max-w-md">
+              <DialogContent class="sm:max-w-448">
                 <DialogHeader>
                   <DialogTitle>Share link</DialogTitle>
                   <DialogDescription>
                     Anyone who has this link will be able to view this.
                   </DialogDescription>
                 </DialogHeader>
-                <div class="flex items-center space-x-2">
-                  <div class="grid flex-1 gap-2">
+                <div class="flex items-center space-x-8">
+                  <div class="grid flex-1 gap-8">
                     <Label for="link" class="sr-only">
                       Link
                     </Label>
@@ -130,9 +130,9 @@ async function handleCopyLink() {
                       read-only
                     />
                   </div>
-                  <Button type="submit" size="sm" class="px-3" @click="handleCopyLink">
+                  <Button type="submit" size="sm" class="px-12" @click="handleCopyLink">
                     <span class="sr-only">Copy</span>
-                    <Icon name="radix-icons:copy" class="h-4 w-4" />
+                    <Icon name="radix-icons:copy" class="h-16 w-16" />
                   </Button>
                 </div>
                 <DialogFooter class="sm:justify-start">
@@ -152,7 +152,7 @@ async function handleCopyLink() {
           <CardTitle>Scroll body</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <Dialog>
               <DialogTrigger as-child>
                 <Button variant="outline">
@@ -160,13 +160,13 @@ async function handleCopyLink() {
                 </Button>
               </DialogTrigger>
               <DialogContent class="grid-rows-[auto_minmax(0,1fr)_auto] max-h-[90dvh] p-0 sm:max-w-[425px]">
-                <DialogHeader class="p-6 pb-0">
+                <DialogHeader class="p-24 pb-0">
                   <DialogTitle>Edit profile</DialogTitle>
                   <DialogDescription>
                     Make changes to your profile here. Click save when you're done.
                   </DialogDescription>
                 </DialogHeader>
-                <div class="grid gap-4 overflow-y-auto px-6 py-4">
+                <div class="grid gap-16 overflow-y-auto px-24 py-16">
                   <div class="h-[300dvh] flex flex-col justify-between">
                     <p>
                       This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.
@@ -175,7 +175,7 @@ async function handleCopyLink() {
                     <p>This content should appear at the bottom after you scroll.</p>
                   </div>
                 </div>
-                <DialogFooter class="p-6 pt-0">
+                <DialogFooter class="p-24 pt-0">
                   <Button type="submit">
                     Save changes
                   </Button>
@@ -190,7 +190,7 @@ async function handleCopyLink() {
           <CardTitle>Scroll overlay</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <Dialog>
               <DialogTrigger as-child>
                 <Button variant="outline">
@@ -204,7 +204,7 @@ async function handleCopyLink() {
                     Here is modal with overlay scroll
                   </DialogDescription>
                 </DialogHeader>
-                <div class="grid h-[300dvh] gap-4 py-4">
+                <div class="grid h-[300dvh] gap-16 py-16">
                   <p>
                     This is some placeholder content to show the scrolling behavior for modals. Instead of repeating the text in the modal, we use an inline style to set a minimum height, thereby extending the length of the overall modal and demonstrating the overflow scrolling. When content becomes longer than the height of the viewport, scrolling will move the modal as needed.
                   </p>

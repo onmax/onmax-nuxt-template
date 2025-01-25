@@ -14,28 +14,28 @@ function handleCompleteSeparator(e: string[]) {
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
-    <div class="grid gap-2">
+  <div class="flex flex-col gap-16">
+    <div class="grid gap-8">
       <div>
-        <h2 class="text-2xl font-bold tracking-tight">
+        <h2 class="f-text-xl font-bold tracking-tight">
           PIN Input
         </h2>
         <p class="text-muted-foreground">
           Allows users to input a sequence of one-character alphanumeric inputs.
         </p>
       </div>
-      <div class="flex gap-2">
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+      <div class="flex gap-8">
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.shadcn-vue.com/docs/components/pin-input"
             external
             target="_blank"
           >
-            <span class="i-radix-icons-code mr-2" />
+            <span class="i-radix-icons-code mr-8" />
             Component Source
           </NuxtLink>
         </Button>
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.radix-vue.com/components/pin-input"
             external
@@ -46,13 +46,13 @@ function handleCompleteSeparator(e: string[]) {
         </Button>
       </div>
     </div>
-    <div class="grid gap-4 md:grid-cols-2">
+    <div class="grid gap-16 md:grid-cols-2">
       <Card class="w-full">
         <CardHeader>
           <CardTitle>Basic</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <PinInput
               id="pin-input"
               v-model="value"
@@ -75,17 +75,17 @@ function handleCompleteSeparator(e: string[]) {
           <CardTitle>With Separator</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <PinInput
               id="pin-input"
               v-model="valueSeparator"
               placeholder="○"
               @complete="handleCompleteSeparator"
             >
-              <PinInputGroup class="gap-1">
+              <PinInputGroup class="gap-4">
                 <template v-for="(id, index) in 5" :key="id">
                   <PinInputInput
-                    class="border rounded-md"
+                    class="border f-rounded"
                     :index="index"
                   />
                   <template v-if="index !== 4">

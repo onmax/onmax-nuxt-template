@@ -49,22 +49,22 @@ const accountFormSchema = toTypedSchema(z.object({
 async function onSubmit(values: any) {
   toast({
     title: 'You submitted the following values:',
-    description: h('pre', { class: 'mt-2 w-[340px] rounded-md bg-slate-950 p-4' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
+    description: h('pre', { class: 'mt-8 w-[340px] f-rounded bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
   })
 }
 </script>
 
 <template>
   <div>
-    <h3 class="text-lg font-medium">
+    <h3 class="f-text-md font-medium">
       Account
     </h3>
-    <p class="text-sm text-muted-foreground">
+    <p class="f-text-xs text-muted-foreground">
       Update your account settings. Set your preferred language and timezone.
     </p>
   </div>
   <Separator />
-  <Form v-slot="{ setFieldValue }" :validation-schema="accountFormSchema" class="space-y-8" @submit="onSubmit">
+  <Form v-slot="{ setFieldValue }" :validation-schema="accountFormSchema" class="space-y-422" @submit="onSubmit">
     <FormField v-slot="{ componentField }" name="name">
       <FormItem>
         <FormLabel>Name</FormLabel>
@@ -90,7 +90,7 @@ async function onSubmit(values: any) {
                   !value && 'text-muted-foreground',
                 )"
               >
-                <Icon name="i-radix-icons-calendar" class="mr-2 h-4 w-4 opacity-50" />
+                <Icon name="i-radix-icons-calendar" class="mr-8 h-16 w-16 opacity-50" />
                 <span>{{ value ? df.format(toDate(dateValue, getLocalTimeZone())) : "Pick a date" }}</span>
               </Button>
             </FormControl>
@@ -141,7 +141,7 @@ async function onSubmit(values: any) {
                   (language) => language.value === value,
                 )?.label : 'Select language...' }}
 
-                <ChevronsUpDown class="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                <ChevronsUpDown class="ml-8 h-16 w-16 shrink-0 opacity-50" />
               </Button>
             </FormControl>
           </PopoverTrigger>
@@ -160,7 +160,7 @@ async function onSubmit(values: any) {
                   >
                     <Check
                       :class="cn(
-                        'mr-2 h-4 w-4',
+                        'mr-8 h-16 w-16',
                         value === language.value ? 'opacity-100' : 'opacity-0',
                       )"
                     />

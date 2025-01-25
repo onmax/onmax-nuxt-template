@@ -26,10 +26,10 @@ function handleSelectLink(link: string) {
 
 <template>
   <SidebarMenuButton as-child tooltip="Search">
-    <Button variant="outline" size="sm" class="text-xs" @click="openCommand = !openCommand">
+    <Button variant="outline" size="sm" class="f-text-2xs" @click="openCommand = !openCommand">
       <Icon name="i-lucide-search" />
       <span class="font-normal group-data-[collapsible=icon]:hidden">Search documentation</span>
-      <div class="ml-auto flex items-center space-x-0.5 group-data-[collapsible=icon]:hidden">
+      <div class="ml-auto flex items-center space-x-2 group-data-[collapsible=icon]:hidden">
         <BaseKbd>{{ metaSymbol }}</BaseKbd>
         <BaseKbd>K</BaseKbd>
       </div>
@@ -62,7 +62,7 @@ function handleSelectLink(link: string) {
           v-for="nav in componentsNav?.children"
           :key="nav.title"
           :value="nav.title"
-          class="gap-2"
+          class="gap-8"
           @select="handleSelectLink(nav.link)"
         >
           <Icon name="i-radix-icons-circle" />

@@ -27,35 +27,35 @@ const showModalTheme = ref(false)
             size="lg"
             class="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
           >
-            <Avatar class="h-8 w-8 rounded-lg">
+            <Avatar class="h-32 w-32 f-rounded">
               <AvatarImage :src="user.avatar" :alt="user.name" />
-              <AvatarFallback class="rounded-lg">
+              <AvatarFallback class="f-rounded">
                 CN
               </AvatarFallback>
             </Avatar>
-            <div class="grid flex-1 text-left text-sm leading-tight">
+            <div class="grid flex-1 text-left f-text-xs leading-tight">
               <span class="truncate font-semibold">{{ user.name }}</span>
-              <span class="truncate text-xs">{{ user.email }}</span>
+              <span class="truncate f-text-2xs">{{ user.email }}</span>
             </div>
-            <Icon name="i-lucide-chevrons-up-down" class="ml-auto size-4" />
+            <Icon name="i-lucide-chevrons-up-down" class="ml-auto size-16" />
           </SidebarMenuButton>
         </DropdownMenuTrigger>
         <DropdownMenuContent
-          class="min-w-56 w-[--radix-dropdown-menu-trigger-width] rounded-lg"
+          class="min-w-224 w-[--radix-dropdown-menu-trigger-width] f-rounded"
           :side="isMobile ? 'bottom' : 'right'"
           align="end"
         >
           <DropdownMenuLabel class="p-0 font-normal">
-            <div class="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
-              <Avatar class="h-8 w-8 rounded-lg">
+            <div class="flex items-center gap-8 px-4 py-6 text-left f-text-xs">
+              <Avatar class="h-32 w-32 f-rounded">
                 <AvatarImage :src="user.avatar" :alt="user.name" />
-                <AvatarFallback class="rounded-lg">
+                <AvatarFallback class="f-rounded">
                   CN
                 </AvatarFallback>
               </Avatar>
-              <div class="grid flex-1 text-left text-sm leading-tight">
+              <div class="grid flex-1 text-left f-text-xs leading-tight">
                 <span class="truncate font-semibold">{{ user.name }}</span>
-                <span class="truncate text-xs">{{ user.email }}</span>
+                <span class="truncate f-text-2xs">{{ user.email }}</span>
               </div>
             </div>
           </DropdownMenuLabel>
@@ -108,7 +108,7 @@ const showModalTheme = ref(false)
     <DialogContent>
       <DialogHeader>
         <DialogTitle>Customize</DialogTitle>
-        <DialogDescription class="text-xs text-muted-foreground">
+        <DialogDescription class="f-text-2xs text-muted-foreground">
           Pick a style and color for your components.
         </DialogDescription>
       </DialogHeader>

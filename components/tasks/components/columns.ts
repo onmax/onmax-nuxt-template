@@ -15,16 +15,16 @@ export const columns: ColumnDef<Task>[] = [
       'checked': table.getIsAllPageRowsSelected() || (table.getIsSomePageRowsSelected() && 'indeterminate'),
       'onUpdate:checked': value => table.toggleAllPageRowsSelected(!!value),
       'ariaLabel': 'Select all',
-      'class': 'translate-y-0.5',
+      'class': 'translate-y-2',
     }),
-    cell: ({ row }) => h(Checkbox, { 'checked': row.getIsSelected(), 'onUpdate:checked': value => row.toggleSelected(!!value), 'ariaLabel': 'Select row', 'class': 'translate-y-0.5' }),
+    cell: ({ row }) => h(Checkbox, { 'checked': row.getIsSelected(), 'onUpdate:checked': value => row.toggleSelected(!!value), 'ariaLabel': 'Select row', 'class': 'translate-y-2' }),
     enableSorting: false,
     enableHiding: false,
   },
   {
     accessorKey: 'id',
     header: ({ column }) => h(DataTableColumnHeader, { column, title: 'Task' }),
-    cell: ({ row }) => h('div', { class: 'w-20' }, row.getValue('id')),
+    cell: ({ row }) => h('div', { class: 'w-80' }, row.getValue('id')),
     enableSorting: false,
     enableHiding: false,
   },
@@ -35,7 +35,7 @@ export const columns: ColumnDef<Task>[] = [
     cell: ({ row }) => {
       const label = labels.find(label => label.value === row.original.label)
 
-      return h('div', { class: 'flex space-x-2' }, [
+      return h('div', { class: 'flex space-x-8' }, [
         label ? h(Badge, { variant: 'outline' }, () => label.label) : null,
         h('span', { class: 'max-w-[500px] truncate font-medium' }, row.getValue('title')),
       ])
@@ -54,7 +54,7 @@ export const columns: ColumnDef<Task>[] = [
         return null
 
       return h('div', { class: 'flex w-[100px] items-center' }, [
-        status.icon && h(status.icon, { class: 'mr-2 h-4 w-4 text-muted-foreground' }),
+        status.icon && h(status.icon, { class: 'mr-8 h-16 w-16 text-muted-foreground' }),
         h('span', status.label),
       ])
     },
@@ -74,7 +74,7 @@ export const columns: ColumnDef<Task>[] = [
         return null
 
       return h('div', { class: 'flex items-center' }, [
-        priority.icon && h(priority.icon, { class: 'mr-2 h-4 w-4 text-muted-foreground' }),
+        priority.icon && h(priority.icon, { class: 'mr-8 h-16 w-16 text-muted-foreground' }),
         h('span', {}, priority.label),
       ])
     },

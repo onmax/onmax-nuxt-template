@@ -65,69 +65,69 @@ const colorMode = useColorMode()
 </script>
 
 <template>
-  <div class="grid gap-6">
-    <div class="space-y-1.5">
+  <div class="grid gap-24">
+    <div class="space-y-6">
       <Label>Color</Label>
-      <div class="grid grid-cols-3 gap-2">
+      <div class="grid grid-cols-3 gap-8">
         <template v-for="color in allColors" :key="color">
           <Button
-            class="justify-start gap-2"
+            class="justify-start gap-8"
             variant="outline"
             :class="{ 'border-primary border-2': theme === color }"
             @click="setTheme(color)"
           >
-            <span class="h-5 w-5 flex items-center justify-center rounded-full" :style="{ backgroundColor: backgroundColor(color) }">
+            <span class="h-20 w-20 flex items-center justify-center rounded-full" :style="{ backgroundColor: backgroundColor(color) }">
               <Icon v-if="theme === color" name="i-radix-icons-check" size="16" class="text-white" />
             </span>
-            <span class="text-xs capitalize">{{ color }}</span>
+            <span class="f-text-2xs capitalize">{{ color }}</span>
           </Button>
         </template>
       </div>
     </div>
-    <div class="space-y-1.5">
+    <div class="space-y-6">
       <Label>Radius</Label>
-      <div class="grid grid-cols-5 gap-2">
+      <div class="grid grid-cols-5 gap-8">
         <template v-for="r in RADII" :key="r">
           <Button
-            class="justify-center gap-2"
+            class="justify-center gap-8"
             variant="outline"
             :class="{ 'border-primary border-2': radius === r }"
             @click="setRadius(r)"
           >
-            <span class="text-xs capitalize">{{ r }}</span>
+            <span class="f-text-2xs capitalize">{{ r }}</span>
           </Button>
         </template>
       </div>
     </div>
-    <div class="space-y-1.5">
+    <div class="space-y-6">
       <Label>Theme</Label>
-      <div class="grid grid-cols-3 gap-2">
+      <div class="grid grid-cols-3 gap-8">
         <Button
-          class="justify-center gap-2"
+          class="justify-center gap-8"
           variant="outline"
           :class="{ 'border-primary border-2': colorMode.preference === 'light' }"
           @click="colorMode.preference = 'light'"
         >
           <Icon name="i-ph-sun-dim-duotone" size="16" />
-          <span class="text-xs capitalize">Light</span>
+          <span class="f-text-2xs capitalize">Light</span>
         </Button>
         <Button
-          class="justify-center gap-2"
+          class="justify-center gap-8"
           variant="outline"
           :class="{ 'border-primary border-2': colorMode.preference === 'dark' }"
           @click="colorMode.preference = 'dark'"
         >
           <Icon name="i-ph-moon-stars-duotone" size="16" />
-          <span class="text-xs capitalize">Dark</span>
+          <span class="f-text-2xs capitalize">Dark</span>
         </Button>
         <Button
-          class="justify-center gap-2"
+          class="justify-center gap-8"
           variant="outline"
           :class="{ 'border-primary border-2': colorMode.preference === 'system' }"
           @click="colorMode.preference = 'system'"
         >
           <Icon name="i-lucide-monitor" size="16" />
-          <span class="text-xs capitalize">System</span>
+          <span class="f-text-2xs capitalize">System</span>
         </Button>
       </div>
     </div>

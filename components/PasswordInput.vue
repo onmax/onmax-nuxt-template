@@ -21,7 +21,7 @@ const showPassword = ref(false)
     <Input
       v-model="showModal"
       :type="showPassword ? 'text' : 'password'"
-      :class="cn('pr-10', props?.class)"
+      :class="cn('pr-40', props?.class)"
       placeholder="Enter your password"
       :disabled="props?.disabled"
       :autocomplete="props?.autocomplete"
@@ -31,17 +31,17 @@ const showPassword = ref(false)
       type="button"
       variant="ghost"
       size="icon"
-      class="absolute right-0 top-0 h-full px-2 py-2 hover:bg-transparent"
+      class="absolute right-0 top-0 h-full px-8 py-8 hover:bg-transparent"
       :disabled="props?.disabled"
       @click="showPassword = !showPassword"
     >
       <Icon
         v-if="showPassword"
         name="i-lucide-eye"
-        class="size-4"
+        class="size-16"
         aria-hidden="true"
       />
-      <Icon v-else name="i-lucide-eye-off" class="size-4" aria-hidden="true" />
+      <Icon v-else name="i-lucide-eye-off" class="size-16" aria-hidden="true" />
       <span class="sr-only">
         {{ showPassword ? "Show password" : "Hide password" }}
       </span>

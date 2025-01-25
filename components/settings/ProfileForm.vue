@@ -46,22 +46,22 @@ const { handleSubmit, resetForm } = useForm({
 const onSubmit = handleSubmit((values) => {
   toast({
     title: 'You submitted the following values:',
-    description: h('pre', { class: 'mt-2 w-[340px] rounded-md bg-slate-950 p-4' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
+    description: h('pre', { class: 'mt-8 w-[340px] f-rounded bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
   })
 })
 </script>
 
 <template>
   <div>
-    <h3 class="text-lg font-medium">
+    <h3 class="f-text-md font-medium">
       Profile
     </h3>
-    <p class="text-sm text-muted-foreground">
+    <p class="f-text-xs text-muted-foreground">
       This is how others will see you on the site.
     </p>
   </div>
   <Separator />
-  <form class="space-y-8" @submit="onSubmit">
+  <form class="space-y-422" @submit="onSubmit">
     <FormField v-slot="{ componentField }" name="username">
       <FormItem>
         <FormLabel>Username</FormLabel>
@@ -128,8 +128,8 @@ const onSubmit = handleSubmit((values) => {
                 <FormControl>
                   <Input type="url" v-bind="componentField" />
                 </FormControl>
-                <button type="button" class="absolute end-0 py-2 pe-3 text-muted-foreground" @click="remove(index)">
-                  <Icon name="i-radix-icons-cross1" class="w-3" />
+                <button type="button" class="absolute end-0 py-8 pe-3 text-muted-foreground" @click="remove(index)">
+                  <Icon name="i-radix-icons-cross1" class="w-12" />
                 </button>
               </div>
               <FormMessage />
@@ -141,7 +141,7 @@ const onSubmit = handleSubmit((values) => {
           type="button"
           variant="outline"
           size="sm"
-          class="mt-2 w-20 text-xs"
+          class="mt-8 w-80 f-text-2xs"
           @click="push({ value: '' })"
         >
           Add URL
@@ -149,7 +149,7 @@ const onSubmit = handleSubmit((values) => {
       </FieldArray>
     </div>
 
-    <div class="flex justify-start gap-2">
+    <div class="flex justify-start gap-8">
       <Button type="submit">
         Update profile
       </Button>

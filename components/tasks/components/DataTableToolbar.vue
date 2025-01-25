@@ -17,11 +17,11 @@ const isFiltered = computed(() => props.table.getState().columnFilters.length > 
 
 <template>
   <div class="flex items-center justify-between">
-    <div class="flex flex-1 items-center space-x-2">
+    <div class="flex flex-1 items-center space-x-8">
       <Input
         placeholder="Filter tasks..."
         :model-value="(table.getColumn('title')?.getFilterValue() as string) ?? ''"
-        class="h-8 w-[150px] lg:w-[250px]"
+        class="h-32 w-[150px] lg:w-[250px]"
         @input="table.getColumn('title')?.setFilterValue($event.target.value)"
       />
       <DataTableFacetedFilter
@@ -40,11 +40,11 @@ const isFiltered = computed(() => props.table.getState().columnFilters.length > 
       <Button
         v-if="isFiltered"
         variant="ghost"
-        class="h-8 px-2 lg:px-3"
+        class="h-32 px-8 lg:px-12"
         @click="table.resetColumnFilters()"
       >
         Reset
-        <Icon name="i-radix-icons-cross-2" class="ml-2 h-4 w-4" />
+        <Icon name="i-radix-icons-cross-2" class="ml-8 h-16 w-16" />
       </Button>
     </div>
     <DataTableViewOptions :table="table" />

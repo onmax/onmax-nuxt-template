@@ -19,9 +19,9 @@ defineProps<NavProps>()
 <template>
   <div
     :data-collapsed="isCollapsed"
-    class="group flex flex-col gap-4 py-2 data-[collapsed=true]:py-2"
+    class="group flex flex-col gap-16 py-8 data-[collapsed=true]:py-8"
   >
-    <nav class="grid gap-1 px-2 group-[[data-collapsed=true]]:justify-center group-[[data-collapsed=true]]:px-2">
+    <nav class="grid gap-4 px-8 group-[[data-collapsed=true]]:justify-center group-[[data-collapsed=true]]:px-8">
       <template v-for="(link, index) of links">
         <Tooltip v-if="isCollapsed" :key="`1-${index}`" :delay-duration="0">
           <TooltipTrigger as-child>
@@ -29,16 +29,16 @@ defineProps<NavProps>()
               href="#"
               :class="cn(
                 buttonVariants({ variant: link.variant, size: 'icon' }),
-                'h-9 w-9',
+                'h-36 w-36',
                 link.variant === 'default'
                   && 'dark:bg-muted dark:text-muted-foreground dark:hover:bg-muted dark:hover:text-white',
               )"
             >
-              <Icon :name="link.icon" class="size-4" />
+              <Icon :name="link.icon" class="size-16" />
               <span class="sr-only">{{ link.title }}</span>
             </a>
           </TooltipTrigger>
-          <TooltipContent side="right" class="flex items-center gap-4">
+          <TooltipContent side="right" class="flex items-center gap-16">
             {{ link.title }}
             <span v-if="link.label" class="ml-auto text-muted-foreground">
               {{ link.label }}
@@ -57,7 +57,7 @@ defineProps<NavProps>()
             'justify-start',
           )"
         >
-          <Icon :name="link.icon" class="mr-2 size-4" />
+          <Icon :name="link.icon" class="mr-8 size-16" />
           {{ link.title }}
           <span
             v-if="link.label"

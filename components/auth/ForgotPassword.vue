@@ -14,8 +14,8 @@ async function onSubmit(event: Event) {
 
 <template>
   <form @submit="onSubmit">
-    <div class="grid gap-4">
-      <div class="grid gap-2">
+    <div class="grid gap-16">
+      <div class="grid gap-8">
         <Label for="email">
           Email
         </Label>
@@ -30,7 +30,7 @@ async function onSubmit(event: Event) {
         />
       </div>
       <Button :disabled="isLoading">
-        <Loader2 v-if="isLoading" class="mr-2 h-4 w-4 animate-spin" />
+        <Loader2 v-if="isLoading" class="mr-8 h-16 w-16 animate-spin" />
         Submit
       </Button>
     </div>

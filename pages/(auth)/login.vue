@@ -6,12 +6,12 @@ definePageMeta({
 
 <template>
   <LayoutAuth reverse>
-    <div class="grid mx-auto max-w-sm gap-6">
-      <div class="grid gap-2 text-center">
-        <h1 class="text-2xl font-semibold tracking-tight">
+    <div class="grid mx-auto max-w-320 gap-24">
+      <div class="grid gap-8 text-center">
+        <h1 class="f-text-xl font-semibold tracking-tight">
           Welcome back
         </h1>
-        <p class="text-balance text-sm text-muted-foreground">
+        <p class="text-balance f-text-xs text-muted-foreground">
           Login with your Apple or Google account
         </p>
       </div>

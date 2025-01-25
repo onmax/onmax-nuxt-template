@@ -145,7 +145,7 @@ watch(() => defaultCollapse.value, () => {
   <ConfigProvider :use-id="useIdFunction">
     <TooltipProvider :delay-duration="0">
       <ResizablePanelGroup
-        id="resize-panel-group-1"
+        id="resize-panel-group-4"
         direction="horizontal"
         class="h-full max-h-[calc(100dvh-53px-3rem)] items-stretch"
       >
@@ -160,7 +160,7 @@ watch(() => defaultCollapse.value, () => {
           @expand="onExpand"
           @collapse="onCollapse"
         >
-          <div :class="cn('flex h-[56px] items-center justify-center', isCollapsed ? 'h-[56px]' : 'px-2')">
+          <div :class="cn('flex h-[56px] items-center justify-center', isCollapsed ? 'h-[56px]' : 'px-8')">
             <MailAccountSwitcher :is-collapsed="isCollapsed" :accounts="accounts" />
           </div>
           <Separator />
@@ -178,8 +178,8 @@ watch(() => defaultCollapse.value, () => {
         <ResizablePanel id="resize-panel-2" :default-size="defaultLayout[1]" :min-size="30">
           <MailDisplay v-if="selectedMailData" :mail="selectedMailData" @close="selectedMail = ''" />
           <Tabs v-else default-value="all">
-            <div class="flex items-center px-4 py-2">
-              <h1 class="text-xl font-bold">
+            <div class="flex items-center px-16 py-8">
+              <h1 class="f-text-lg font-bold">
                 Inbox
               </h1>
               <TabsList class="ml-auto">
@@ -192,11 +192,11 @@ watch(() => defaultCollapse.value, () => {
               </TabsList>
             </div>
             <Separator />
-            <div class="bg-background/95 p-4 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+            <div class="bg-background/95 p-16 backdrop-blur supports-[backdrop-filter]:bg-background/60">
               <form>
                 <div class="relative">
-                  <Search class="absolute left-2 top-2.5 size-4 text-muted-foreground" />
-                  <Input v-model="searchValue" placeholder="Search" class="pl-8" />
+                  <Search class="absolute left-8 top-10 size-16 text-muted-foreground" />
+                  <Input v-model="searchValue" placeholder="Search" class="pl-32" />
                 </div>
               </form>
             </div>

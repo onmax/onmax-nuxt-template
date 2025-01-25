@@ -5,17 +5,17 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center gap-6 bg-muted p-6 min-h-svh md:p-10">
-    <div class="max-w-sm w-full flex flex-col gap-6">
-      <NuxtLink to="#" class="flex items-center self-center gap-2 font-medium">
-        <div class="h-6 w-6 flex items-center justify-center rounded-md bg-primary text-primary-foreground">
-          <Icon name="i-lucide-gallery-vertical-end" class-name="size-4" />
+  <div class="flex flex-col items-center justify-center gap-24 bg-muted p-24 min-h-svh md:p-40">
+    <div class="max-w-320 w-full flex flex-col gap-24">
+      <NuxtLink to="#" class="flex items-center self-center gap-8 font-medium">
+        <div class="h-24 w-24 flex items-center justify-center f-rounded bg-primary text-primary-foreground">
+          <Icon name="i-lucide-gallery-vertical-end" class-name="size-16" />
         </div>
         Acme Inc.
       </NuxtLink>
       <Card>
         <CardHeader class="text-center">
-          <CardTitle class="text-xl">
+          <CardTitle class="f-text-lg">
             Forgot Password
           </CardTitle>
           <CardDescription>
@@ -23,9 +23,9 @@ definePageMeta({
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div class="grid mx-auto max-w-sm gap-6">
+          <div class="grid mx-auto max-w-320 gap-24">
             <AuthForgotPassword />
-            <p class="text-center text-sm text-muted-foreground">
+            <p class="text-center f-text-xs text-muted-foreground">
               Already have an account?
               <NuxtLink
                 to="/login"

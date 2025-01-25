@@ -5,10 +5,10 @@ import tasks from '@/components/tasks/data/tasks.json'
 </script>
 
 <template>
-  <div class="w-full flex flex-col items-stretch gap-4">
-    <div class="flex flex-wrap items-end justify-between gap-2">
+  <div class="w-full flex flex-col items-stretch gap-16">
+    <div class="flex flex-wrap items-end justify-between gap-8">
       <div>
-        <h2 class="text-2xl font-bold tracking-tight">
+        <h2 class="f-text-xl font-bold tracking-tight">
           Tasks
         </h2>
         <p class="text-muted-foreground">

@@ -2,28 +2,28 @@
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
-    <div class="grid gap-2">
+  <div class="flex flex-col gap-16">
+    <div class="grid gap-8">
       <div>
-        <h2 class="text-2xl font-bold tracking-tight">
+        <h2 class="f-text-xl font-bold tracking-tight">
           Toggle Group
         </h2>
         <p class="text-muted-foreground">
           A set of two-state buttons that can be toggled on or off.
         </p>
       </div>
-      <div class="flex gap-2">
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+      <div class="flex gap-8">
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.shadcn-vue.com/docs/components/toggle-group"
             external
             target="_blank"
           >
-            <span class="i-radix-icons-code mr-2" />
+            <span class="i-radix-icons-code mr-8" />
             Component Source
           </NuxtLink>
         </Button>
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.radix-vue.com/components/toggle-group"
             external
@@ -34,22 +34,22 @@
         </Button>
       </div>
     </div>
-    <div class="grid gap-4 md:grid-cols-2">
+    <div class="grid gap-16 md:grid-cols-2">
       <Card class="w-full">
         <CardHeader>
           <CardTitle>Basic</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <ToggleGroup type="multiple">
               <ToggleGroupItem value="bold" aria-label="Toggle bold">
-                <Icon name="i-radix-icons-font-bold" class="h-4 w-4" />
+                <Icon name="i-radix-icons-font-bold" class="h-16 w-16" />
               </ToggleGroupItem>
               <ToggleGroupItem value="italic" aria-label="Toggle italic">
-                <Icon name="i-radix-icons-font-italic" class="h-4 w-4" />
+                <Icon name="i-radix-icons-font-italic" class="h-16 w-16" />
               </ToggleGroupItem>
               <ToggleGroupItem value="underline" aria-label="Toggle underline">
-                <Icon name="i-radix-icons-underline" class="h-4 w-4" />
+                <Icon name="i-radix-icons-underline" class="h-16 w-16" />
               </ToggleGroupItem>
             </ToggleGroup>
           </div>
@@ -60,16 +60,16 @@
           <CardTitle>Outline</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <ToggleGroup type="multiple" variant="outline">
               <ToggleGroupItem value="bold" aria-label="Toggle bold">
-                <Icon name="i-radix-icons-font-bold" class="h-4 w-4" />
+                <Icon name="i-radix-icons-font-bold" class="h-16 w-16" />
               </ToggleGroupItem>
               <ToggleGroupItem value="italic" aria-label="Toggle italic">
-                <Icon name="i-radix-icons-font-italic" class="h-4 w-4" />
+                <Icon name="i-radix-icons-font-italic" class="h-16 w-16" />
               </ToggleGroupItem>
               <ToggleGroupItem value="underline" aria-label="Toggle underline">
-                <Icon name="i-radix-icons-underline" class="h-4 w-4" />
+                <Icon name="i-radix-icons-underline" class="h-16 w-16" />
               </ToggleGroupItem>
             </ToggleGroup>
           </div>
@@ -80,16 +80,16 @@
           <CardTitle>Single</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <ToggleGroup type="single">
               <ToggleGroupItem value="bold" aria-label="Toggle bold">
-                <Icon name="i-radix-icons-font-bold" class="h-4 w-4" />
+                <Icon name="i-radix-icons-font-bold" class="h-16 w-16" />
               </ToggleGroupItem>
               <ToggleGroupItem value="italic" aria-label="Toggle italic">
-                <Icon name="i-radix-icons-font-italic" class="h-4 w-4" />
+                <Icon name="i-radix-icons-font-italic" class="h-16 w-16" />
               </ToggleGroupItem>
               <ToggleGroupItem value="underline" aria-label="Toggle underline">
-                <Icon name="i-radix-icons-underline" class="h-4 w-4" />
+                <Icon name="i-radix-icons-underline" class="h-16 w-16" />
               </ToggleGroupItem>
             </ToggleGroup>
           </div>

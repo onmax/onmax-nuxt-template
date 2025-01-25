@@ -31,34 +31,34 @@ const { isFieldDirty, handleSubmit } = useForm({
 
 const onSubmit = handleSubmit((values) => {
   toast('You submitted the following values:', {
-    description: h('pre', { class: 'mt-2 w-[340px] rounded-md bg-slate-950 p-4' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
+    description: h('pre', { class: 'mt-8 w-[340px] f-rounded bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
   })
 })
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
-    <div class="grid gap-2">
+  <div class="flex flex-col gap-16">
+    <div class="grid gap-8">
       <div>
-        <h2 class="text-2xl font-bold tracking-tight">
+        <h2 class="f-text-xl font-bold tracking-tight">
           Form
         </h2>
         <p class="text-muted-foreground">
           Building forms with VeeValidate and Zod.
         </p>
       </div>
-      <div class="flex gap-2">
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+      <div class="flex gap-8">
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.shadcn-vue.com/docs/components/form"
             external
             target="_blank"
           >
-            <span class="i-radix-icons-code mr-2" />
+            <span class="i-radix-icons-code mr-8" />
             Component Source
           </NuxtLink>
         </Button>
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://vee-validate.logaretm.com/v4/guide/overview/"
             external
@@ -69,14 +69,14 @@ const onSubmit = handleSubmit((values) => {
         </Button>
       </div>
     </div>
-    <div class="grid gap-4 md:grid-cols-2">
+    <div class="grid gap-16 md:grid-cols-2">
       <Card class="w-full">
         <CardHeader>
           <CardTitle>Basic</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
-            <form class="w-full md:w-2/3 space-y-6" @submit="onSubmit">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
+            <form class="w-full md:w-2/3 space-y-24" @submit="onSubmit">
               <FormField v-slot="{ componentField }" name="username" :validate-on-blur="!isFieldDirty">
                 <FormItem>
                   <FormLabel>Username</FormLabel>
@@ -121,11 +121,11 @@ const onSubmit = handleSubmit((values) => {
                 </FormItem>
               </FormField>
               <FormField v-slot="{ value, handleChange }" type="checkbox" name="mobile">
-                <FormItem class="flex flex-row items-start gap-x-3 border rounded-md p-4 shadow space-y-0">
+                <FormItem class="flex flex-row items-start gap-x-3 border f-rounded p-16 shadow space-y-0">
                   <FormControl>
                     <Checkbox :checked="value" @update:checked="handleChange" />
                   </FormControl>
-                  <div class="leading-none space-y-1">
+                  <div class="leading-none space-y-4">
                     <FormLabel>Use different settings for my mobile devices</FormLabel>
                     <FormDescription>
                       You can manage your mobile notifications in the
@@ -136,12 +136,12 @@ const onSubmit = handleSubmit((values) => {
                 </FormItem>
               </FormField>
               <FormField v-slot="{ componentField }" type="radio" name="type">
-                <FormItem class="space-y-3">
+                <FormItem class="space-y-42">
                   <FormLabel>Notify me about...</FormLabel>
 
                   <FormControl>
                     <RadioGroup
-                      class="flex flex-col space-y-1"
+                      class="flex flex-col space-y-4"
                       v-bind="componentField"
                     >
                       <FormItem class="flex items-center gap-x-3 space-y-0">

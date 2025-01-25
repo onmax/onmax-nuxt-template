@@ -9,8 +9,8 @@
       </Button>
     </DrawerTrigger>
     <DrawerContent>
-      <div class="mx-auto max-w-sm w-full">
-        <ThemeCustomize class="p-4" />
+      <div class="mx-auto max-w-320 w-full">
+        <ThemeCustomize class="p-16" />
       </div>
     </DrawerContent>
   </Drawer>

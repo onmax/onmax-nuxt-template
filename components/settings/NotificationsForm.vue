@@ -29,31 +29,31 @@ const { handleSubmit } = useForm({
 const onSubmit = handleSubmit((values) => {
   toast({
     title: 'You submitted the following values:',
-    description: h('pre', { class: 'mt-2 w-[340px] rounded-md bg-slate-950 p-4' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
+    description: h('pre', { class: 'mt-8 w-[340px] f-rounded bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
   })
 })
 </script>
 
 <template>
   <div>
-    <h3 class="text-lg font-medium">
+    <h3 class="f-text-md font-medium">
       Notifications
     </h3>
-    <p class="text-sm text-muted-foreground">
+    <p class="f-text-xs text-muted-foreground">
       Configure how you receive notifications.
     </p>
   </div>
   <Separator />
-  <form class="space-y-8" @submit="onSubmit">
+  <form class="space-y-422" @submit="onSubmit">
     <FormField v-slot="{ componentField }" type="radio" name="type">
-      <FormItem class="space-y-3">
+      <FormItem class="space-y-42">
         <FormLabel>Notify me about...</FormLabel>
         <FormControl>
           <RadioGroup
-            class="flex flex-col space-y-1"
+            class="flex flex-col space-y-4"
             v-bind="componentField"
           >
-            <FormItem class="flex items-center space-x-3 space-y-0">
+            <FormItem class="flex items-center space-x-42 space-y-0">
               <FormControl>
                 <RadioGroupItem value="all" />
               </FormControl>
@@ -61,7 +61,7 @@ const onSubmit = handleSubmit((values) => {
                 All new messages
               </FormLabel>
             </FormItem>
-            <FormItem class="flex items-center space-x-3 space-y-0">
+            <FormItem class="flex items-center space-x-42 space-y-0">
               <FormControl>
                 <RadioGroupItem value="mentions" />
               </FormControl>
@@ -69,7 +69,7 @@ const onSubmit = handleSubmit((values) => {
                 Direct messages and mentions
               </FormLabel>
             </FormItem>
-            <FormItem class="flex items-center space-x-3 space-y-0">
+            <FormItem class="flex items-center space-x-42 space-y-0">
               <FormControl>
                 <RadioGroupItem value="none" />
               </FormControl>
@@ -84,13 +84,13 @@ const onSubmit = handleSubmit((values) => {
     </FormField>
 
     <div>
-      <h3 class="mb-4 text-lg font-medium">
+      <h3 class="mb-16 f-text-md font-medium">
         Email Notifications
       </h3>
-      <div class="space-y-4">
+      <div class="space-y-80">
         <FormField v-slot="{ handleChange, value }" type="checkbox" name="communication_emails">
-          <FormItem class="flex flex-row items-center justify-between border rounded-lg p-4">
-            <div class="space-y-0.5">
+          <FormItem class="flex flex-row items-center justify-between border f-rounded p-16">
+            <div class="space-y-2">
               <FormLabel class="text-base">
                 Communication emails
               </FormLabel>
@@ -108,8 +108,8 @@ const onSubmit = handleSubmit((values) => {
         </FormField>
 
         <FormField v-slot="{ handleChange, value }" type="checkbox" name="marketing_emails">
-          <FormItem class="flex flex-row items-center justify-between border rounded-lg p-4">
-            <div class="space-y-0.5">
+          <FormItem class="flex flex-row items-center justify-between border f-rounded p-16">
+            <div class="space-y-2">
               <FormLabel class="text-base">
                 Marketing emails
               </FormLabel>
@@ -127,8 +127,8 @@ const onSubmit = handleSubmit((values) => {
         </FormField>
 
         <FormField v-slot="{ handleChange, value }" type="checkbox" name="social_emails">
-          <FormItem class="flex flex-row items-center justify-between border rounded-lg p-4">
-            <div class="space-y-0.5">
+          <FormItem class="flex flex-row items-center justify-between border f-rounded p-16">
+            <div class="space-y-2">
               <FormLabel class="text-base">
                 Social emails
               </FormLabel>
@@ -146,8 +146,8 @@ const onSubmit = handleSubmit((values) => {
         </FormField>
 
         <FormField v-slot="{ handleChange, value }" type="checkbox" name="security_emails">
-          <FormItem class="flex flex-row items-center justify-between border rounded-lg p-4">
-            <div class="space-y-0.5">
+          <FormItem class="flex flex-row items-center justify-between border f-rounded p-16">
+            <div class="space-y-2">
               <FormLabel class="text-base">
                 Security emails
               </FormLabel>
@@ -167,14 +167,14 @@ const onSubmit = handleSubmit((values) => {
     </div>
 
     <FormField v-slot="{ handleChange, value }" type="checkbox" name="mobile">
-      <FormItem class="flex flex-row items-start space-x-3 space-y-0">
+      <FormItem class="flex flex-row items-start space-x-42 space-y-0">
         <FormControl>
           <Checkbox
             :checked="value"
             @update:checked="handleChange"
           />
         </FormControl>
-        <div class="leading-none space-y-1">
+        <div class="leading-none space-y-4">
           <FormLabel>
             Use different settings for my mobile devices
           </FormLabel>

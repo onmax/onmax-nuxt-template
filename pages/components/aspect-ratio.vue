@@ -2,28 +2,28 @@
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
-    <div class="grid gap-2">
+  <div class="flex flex-col gap-16">
+    <div class="grid gap-8">
       <div>
-        <h2 class="text-2xl font-bold tracking-tight">
+        <h2 class="f-text-xl font-bold tracking-tight">
           Aspect Ratio
         </h2>
         <p class="text-muted-foreground">
           Displays content within a desired ratio.
         </p>
       </div>
-      <div class="flex gap-2">
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+      <div class="flex gap-8">
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.shadcn-vue.com/docs/components/aspect-ratio"
             external
             target="_blank"
           >
-            <span class="i-radix-icons-code mr-2" />
+            <span class="i-radix-icons-code mr-8" />
             Component Source
           </NuxtLink>
         </Button>
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.radix-vue.com/components/aspect-ratio"
             external
@@ -34,13 +34,13 @@
         </Button>
       </div>
     </div>
-    <div class="flex flex-col gap-4 md:flex-row">
+    <div class="flex flex-col gap-16 md:flex-row">
       <Card class="flex-1">
         <CardHeader>
           <CardTitle>Ratio 16/9</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="mx-auto w-full flex items-center justify-center overflow-hidden rounded-lg md:w-300px">
+          <div class="mx-auto w-full flex items-center justify-center overflow-hidden f-rounded md:w-1200px">
             <AspectRatio :ratio="16 / 9">
               <img
                 class="h-full w-full object-cover"
@@ -56,7 +56,7 @@
           <CardTitle>Ratio 1/1</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="mx-auto w-full flex items-center justify-center overflow-hidden rounded-lg md:w-300px">
+          <div class="mx-auto w-full flex items-center justify-center overflow-hidden f-rounded md:w-1200px">
             <AspectRatio :ratio="1">
               <img
                 class="h-full w-full object-cover"

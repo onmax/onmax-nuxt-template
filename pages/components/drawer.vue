@@ -22,28 +22,28 @@ const data = [
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
-    <div class="grid gap-2">
+  <div class="flex flex-col gap-16">
+    <div class="grid gap-8">
       <div>
-        <h2 class="text-2xl font-bold tracking-tight">
+        <h2 class="f-text-xl font-bold tracking-tight">
           Dialog
         </h2>
         <p class="text-muted-foreground">
           A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.
         </p>
       </div>
-      <div class="flex gap-2">
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+      <div class="flex gap-8">
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.shadcn-vue.com/docs/components/drawer"
             external
             target="_blank"
           >
-            <span class="i-radix-icons-code mr-2" />
+            <span class="i-radix-icons-code mr-8" />
             Component Source
           </NuxtLink>
         </Button>
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://github.com/radix-vue/vaul-vue"
             external
@@ -54,13 +54,13 @@ const data = [
         </Button>
       </div>
     </div>
-    <div class="grid gap-4 md:grid-cols-2">
+    <div class="grid gap-16 md:grid-cols-2">
       <Card class="w-full">
         <CardHeader>
           <CardTitle>Basic</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <Drawer>
               <DrawerTrigger as-child>
                 <Button variant="outline">
@@ -68,21 +68,21 @@ const data = [
                 </Button>
               </DrawerTrigger>
               <DrawerContent>
-                <div class="mx-auto max-w-sm w-full">
+                <div class="mx-auto max-w-320 w-full">
                   <DrawerHeader>
                     <DrawerTitle>Move Goal</DrawerTitle>
                     <DrawerDescription>Set your daily activity goal.</DrawerDescription>
                   </DrawerHeader>
-                  <div class="p-4 pb-0">
-                    <div class="flex items-center justify-center space-x-2">
+                  <div class="p-16 pb-0">
+                    <div class="flex items-center justify-center space-x-8">
                       <Button
                         variant="outline"
                         size="icon"
-                        class="h-8 w-8 shrink-0 rounded-full"
+                        class="h-32 w-32 shrink-0 rounded-full"
                         :disabled="goal <= 200"
                         @click="goal -= 10"
                       >
-                        <Icon name="radix-icons:minus" class="h-4 w-4" />
+                        <Icon name="radix-icons:minus" class="h-16 w-16" />
                         <span class="sr-only">Decrease</span>
                       </Button>
                       <div class="flex-1 text-center">
@@ -96,15 +96,15 @@ const data = [
                       <Button
                         variant="outline"
                         size="icon"
-                        class="h-8 w-8 shrink-0 rounded-full"
+                        class="h-32 w-32 shrink-0 rounded-full"
                         :disabled="goal >= 400"
                         @click="goal += 10"
                       >
-                        <Icon name="radix-icons:plus" class="h-4 w-4" />
+                        <Icon name="radix-icons:plus" class="h-16 w-16" />
                         <span class="sr-only">Increase</span>
                       </Button>
                     </div>
-                    <div class="my-3 h-[120px] px-3">
+                    <div class="my-12 h-[120px] px-12">
                       <VisXYContainer
                         :data="data"
                         class="h-[120px]"

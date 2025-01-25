@@ -14,13 +14,13 @@ const props = withDefaults(defineProps<KbdProps>(), {
 
 const kbdClass = computed(() => {
   return cva(
-    'inline-flex items-center pointer-events-none min-w-5 h-5 select-none justify-center items-center gap-1 rounded border border-border bg-muted font-sans font-medium',
+    'inline-flex items-center pointer-events-none min-w-20 h-20 select-none justify-center items-center gap-4 rounded border border-border bg-muted font-sans font-medium',
     {
       variants: {
         size: {
-          xs: 'min-h-4 text-[10px] h-4 px-1',
-          sm: 'min-h-5 text-[11px] h-5 px-1',
-          md: 'min-h-6 text-[12px] h-6 px-1.5',
+          xs: 'min-h-16 text-[10px] h-16 px-4',
+          sm: 'min-h-20 text-[11px] h-20 px-4',
+          md: 'min-h-24 text-[12px] h-24 px-6',
         },
       },
     },

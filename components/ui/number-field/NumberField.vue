@@ -17,7 +17,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
 </script>
 
 <template>
-  <NumberFieldRoot v-bind="forwarded" :class="cn('grid gap-1.5', props.class)">
+  <NumberFieldRoot v-bind="forwarded" :class="cn('grid gap-6', props.class)">
     <slot />
   </NumberFieldRoot>
 </template>

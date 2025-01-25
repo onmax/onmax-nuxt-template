@@ -2,28 +2,28 @@
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
-    <div class="grid gap-2">
+  <div class="flex flex-col gap-16">
+    <div class="grid gap-8">
       <div>
-        <h2 class="text-2xl font-bold tracking-tight">
+        <h2 class="f-text-xl font-bold tracking-tight">
           Alert Dialog
         </h2>
         <p class="text-muted-foreground">
           A modal dialog that interrupts the user with important content and expects a response.
         </p>
       </div>
-      <div class="flex gap-2">
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+      <div class="flex gap-8">
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.shadcn-vue.com/docs/components/alert-dialog"
             external
             target="_blank"
           >
-            <span class="i-radix-icons-code mr-2" />
+            <span class="i-radix-icons-code mr-8" />
             Component Source
           </NuxtLink>
         </Button>
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.radix-vue.com/components/alert-dialog"
             external
@@ -34,13 +34,13 @@
         </Button>
       </div>
     </div>
-    <div class="flex flex-col gap-4 md:flex-row">
+    <div class="flex flex-col gap-16 md:flex-row">
       <Card class="flex-1">
         <CardHeader>
           <CardTitle>Basic</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="h-200px flex items-center justify-center">
+          <div class="h-800px flex items-center justify-center">
             <AlertDialog>
               <AlertDialogTrigger as-child>
                 <Button variant="outline">

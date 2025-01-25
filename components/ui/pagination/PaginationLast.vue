@@ -19,7 +19,7 @@ const delegatedProps = computed(() => {
 
 <template>
   <PaginationLast v-bind="delegatedProps">
-    <Button :class="cn('w-9 h-9 p-0', props.class)" variant="outline">
+    <Button :class="cn('w-36 h-36 p-0', props.class)" variant="outline">
       <slot>
         <Icon name="i-radix-icons-double-arrow-right" />
       </slot>

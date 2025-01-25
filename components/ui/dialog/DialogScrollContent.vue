@@ -32,7 +32,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
       <DialogContent
         :class="
           cn(
-            'relative z-50 grid w-full max-w-lg my-8 gap-4 border border-border bg-background p-6 shadow-lg duration-200 sm:rounded-lg md:w-full',
+            'relative z-50 grid w-full max-w-512 my-32 gap-16 border border-border bg-background p-24 shadow-512 duration-200 sm:f-rounded md:w-full',
             props.class,
           )
         "
@@ -48,9 +48,9 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
         <slot />
 
         <DialogClose
-          class="absolute right-3 top-3 rounded-md p-0.5 transition-colors hover:bg-secondary"
+          class="absolute right-12 top-12 f-rounded p-2 transition-colors hover:bg-secondary"
         >
-          <X class="h-4 w-4" />
+          <X class="h-16 w-16" />
           <span class="sr-only">Close</span>
         </DialogClose>
       </DialogContent>

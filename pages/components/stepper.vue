@@ -41,28 +41,28 @@ const steps = [
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
-    <div class="grid gap-2">
+  <div class="flex flex-col gap-16">
+    <div class="grid gap-8">
       <div>
-        <h2 class="text-2xl font-bold tracking-tight">
+        <h2 class="f-text-xl font-bold tracking-tight">
           Stepper
         </h2>
         <p class="text-muted-foreground">
           A set of steps that are used to indicate progress through a multi-step process.
         </p>
       </div>
-      <div class="flex gap-2">
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+      <div class="flex gap-8">
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.shadcn-vue.com/docs/components/stepper"
             external
             target="_blank"
           >
-            <span class="i-radix-icons-code mr-2" />
+            <span class="i-radix-icons-code mr-8" />
             Component Source
           </NuxtLink>
         </Button>
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.radix-vue.com/components/stepper"
             external
@@ -73,13 +73,13 @@ const steps = [
         </Button>
       </div>
     </div>
-    <div class="grid gap-4 md:grid-cols-2">
+    <div class="grid gap-16 md:grid-cols-2">
       <Card class="w-full">
         <CardHeader>
           <CardTitle>Basic</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <Stepper>
               <StepperItem
                 v-for="item in stepsBasic"
@@ -89,7 +89,7 @@ const steps = [
               >
                 <StepperTrigger>
                   <StepperIndicator>
-                    <Icon :name="item.icon" class="h-4 w-4" />
+                    <Icon :name="item.icon" class="h-16 w-16" />
                   </StepperIndicator>
                   <div class="flex flex-col">
                     <StepperTitle>
@@ -114,8 +114,8 @@ const steps = [
           <CardTitle>Horizontal</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
-            <Stepper class="w-full flex items-start gap-2">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
+            <Stepper class="w-full flex items-start gap-8">
               <StepperItem
                 v-for="step in steps"
                 :key="step.step"
@@ -125,7 +125,7 @@ const steps = [
               >
                 <StepperSeparator
                   v-if="step.step !== steps[steps.length - 1].step"
-                  class="absolute left-[calc(50%+20px)] right-[calc(-50%+10px)] top-5 block h-0.5 shrink-0 rounded-full bg-muted group-data-[state=completed]:bg-primary"
+                  class="absolute left-[calc(50%+20px)] right-[calc(-50%+10px)] top-20 block h-2 shrink-0 rounded-full bg-muted group-data-[state=completed]:bg-primary"
                 />
 
                 <StepperTrigger as-child>
@@ -135,22 +135,22 @@ const steps = [
                     class="z-10 shrink-0 rounded-full"
                     :class="[state === 'active' && 'ring-2 ring-ring ring-offset-2 ring-offset-background']"
                   >
-                    <Icon v-if="state === 'completed'" name="i-lucide-check" class="size-5" />
+                    <Icon v-if="state === 'completed'" name="i-lucide-check" class="size-20" />
                     <Icon v-if="state === 'active'" name="i-lucide-circle" />
                     <Icon v-if="state === 'inactive'" name="i-lucide-dot" />
                   </Button>
                 </StepperTrigger>
 
-                <div class="mt-5 flex flex-col items-center text-center">
+                <div class="mt-20 flex flex-col items-center text-center">
                   <StepperTitle
                     :class="[state === 'active' && 'text-primary']"
-                    class="text-sm font-semibold transition lg:text-base"
+                    class="f-text-xs font-semibold transition lg:text-base"
                   >
                     {{ step.title }}
                   </StepperTitle>
                   <StepperDescription
                     :class="[state === 'active' && 'text-primary']"
-                    class="sr-only text-xs text-muted-foreground transition md:not-sr-only lg:text-sm"
+                    class="sr-only f-text-2xs text-muted-foreground transition md:not-sr-only lg:f-text-xs"
                   >
                     {{ step.description }}
                   </StepperDescription>
@@ -165,18 +165,18 @@ const steps = [
           <CardTitle>Vertical</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-100px w-full flex items-center justify-center gap-4 md:min-h-200px">
-            <Stepper orientation="vertical" class="mx-auto max-w-md w-full flex flex-col justify-start gap-10">
+          <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
+            <Stepper orientation="vertical" class="mx-auto max-w-448 w-full flex flex-col justify-start gap-40">
               <StepperItem
                 v-for="step in steps"
                 :key="step.step"
                 v-slot="{ state }"
-                class="relative w-full flex items-start gap-6"
+                class="relative w-full flex items-start gap-24"
                 :step="step.step"
               >
                 <StepperSeparator
                   v-if="step.step !== steps[steps.length - 1].step"
-                  class="absolute left-[18px] top-[38px] block h-[105%] w-0.5 shrink-0 rounded-full bg-muted group-data-[state=completed]:bg-primary"
+                  class="absolute left-[18px] top-[38px] block h-[105%] w-2 shrink-0 rounded-full bg-muted group-data-[state=completed]:bg-primary"
                 />
 
                 <StepperTrigger as-child>
@@ -186,22 +186,22 @@ const steps = [
                     class="z-10 shrink-0 rounded-full"
                     :class="[state === 'active' && 'ring-2 ring-ring ring-offset-2 ring-offset-background']"
                   >
-                    <Icon v-if="state === 'completed'" name="i-lucide-check" class="size-5" />
+                    <Icon v-if="state === 'completed'" name="i-lucide-check" class="size-20" />
                     <Icon v-if="state === 'active'" name="i-lucide-circle" />
                     <Icon v-if="state === 'inactive'" name="i-lucide-dot" />
                   </Button>
                 </StepperTrigger>
 
-                <div class="flex flex-col gap-1">
+                <div class="flex flex-col gap-4">
                   <StepperTitle
                     :class="[state === 'active' && 'text-primary']"
-                    class="text-sm font-semibold transition lg:text-base"
+                    class="f-text-xs font-semibold transition lg:text-base"
                   >
                     {{ step.title }}
                   </StepperTitle>
                   <StepperDescription
                     :class="[state === 'active' && 'text-primary']"
-                    class="sr-only text-xs text-muted-foreground transition md:not-sr-only lg:text-sm"
+                    class="sr-only f-text-2xs text-muted-foreground transition md:not-sr-only lg:f-text-xs"
                   >
                     {{ step.description }}
                   </StepperDescription>

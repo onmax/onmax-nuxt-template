@@ -3,96 +3,96 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
 </script>
 
 <template>
-  <div class="w-full flex flex-col gap-4">
-    <div class="flex flex-wrap items-center justify-between gap-2">
-      <h2 class="text-2xl font-bold tracking-tight">
+  <div class="w-full flex flex-col gap-16">
+    <div class="flex flex-wrap items-center justify-between gap-8">
+      <h2 class="f-text-xl font-bold tracking-tight">
         Dashboard
       </h2>
-      <div class="flex items-center space-x-2">
+      <div class="flex items-center space-x-8">
         <BaseDateRangePicker />
         <Button>Download</Button>
       </div>
     </div>
-    <main class="flex flex-1 flex-col gap-4 md:gap-8">
-      <div class="grid gap-4 lg:grid-cols-4 md:grid-cols-2 md:gap-8">
+    <main class="flex flex-1 flex-col gap-16 md:gap-32">
+      <div class="grid gap-16 lg:grid-cols-4 md:grid-cols-2 md:gap-32">
         <Card>
-          <CardHeader class="flex flex-row items-center justify-between pb-2 space-y-0">
-            <CardTitle class="text-sm font-medium">
+          <CardHeader class="flex flex-row items-center justify-between pb-8 space-y-0">
+            <CardTitle class="f-text-xs font-medium">
               Total Revenue
             </CardTitle>
-            <DollarSign class="h-4 w-4 text-muted-foreground" />
+            <DollarSign class="h-16 w-16 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div class="text-2xl font-bold">
+            <div class="f-text-xl font-bold">
               $45,231.89
             </div>
-            <p class="text-xs text-muted-foreground">
+            <p class="f-text-2xs text-muted-foreground">
               +20.1% from last month
             </p>
           </CardContent>
         </Card>
         <Card>
-          <CardHeader class="flex flex-row items-center justify-between pb-2 space-y-0">
-            <CardTitle class="text-sm font-medium">
+          <CardHeader class="flex flex-row items-center justify-between pb-8 space-y-0">
+            <CardTitle class="f-text-xs font-medium">
               Subscriptions
             </CardTitle>
-            <Users class="h-4 w-4 text-muted-foreground" />
+            <Users class="h-16 w-16 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div class="text-2xl font-bold">
+            <div class="f-text-xl font-bold">
               +2350
             </div>
-            <p class="text-xs text-muted-foreground">
+            <p class="f-text-2xs text-muted-foreground">
               +180.1% from last month
             </p>
           </CardContent>
         </Card>
         <Card>
-          <CardHeader class="flex flex-row items-center justify-between pb-2 space-y-0">
-            <CardTitle class="text-sm font-medium">
+          <CardHeader class="flex flex-row items-center justify-between pb-8 space-y-0">
+            <CardTitle class="f-text-xs font-medium">
               Sales
             </CardTitle>
-            <CreditCard class="h-4 w-4 text-muted-foreground" />
+            <CreditCard class="h-16 w-16 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div class="text-2xl font-bold">
+            <div class="f-text-xl font-bold">
               +12,234
             </div>
-            <p class="text-xs text-muted-foreground">
+            <p class="f-text-2xs text-muted-foreground">
               +19% from last month
             </p>
           </CardContent>
         </Card>
         <Card>
-          <CardHeader class="flex flex-row items-center justify-between pb-2 space-y-0">
-            <CardTitle class="text-sm font-medium">
+          <CardHeader class="flex flex-row items-center justify-between pb-8 space-y-0">
+            <CardTitle class="f-text-xs font-medium">
               Active Now
             </CardTitle>
-            <Activity class="h-4 w-4 text-muted-foreground" />
+            <Activity class="h-16 w-16 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div class="text-2xl font-bold">
+            <div class="f-text-xl font-bold">
               +573
             </div>
-            <p class="text-xs text-muted-foreground">
+            <p class="f-text-2xs text-muted-foreground">
               +201 since last hour
             </p>
           </CardContent>
         </Card>
       </div>
-      <div class="grid gap-4 lg:grid-cols-2 xl:grid-cols-3 md:gap-8">
+      <div class="grid gap-16 lg:grid-cols-2 xl:grid-cols-3 md:gap-32">
         <Card class="xl:col-span-2">
           <CardHeader class="flex flex-row items-center">
-            <div class="grid gap-2">
+            <div class="grid gap-8">
               <CardTitle>Transactions</CardTitle>
               <CardDescription>
                 Recent transactions from your store.
               </CardDescription>
             </div>
-            <Button as-child size="sm" class="ml-auto gap-1">
+            <Button as-child size="sm" class="ml-auto gap-4">
               <a href="#">
                 View All
-                <ArrowUpRight class="h-4 w-4" />
+                <ArrowUpRight class="h-16 w-16" />
               </a>
             </Button>
           </CardHeader>
@@ -121,7 +121,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     <div class="font-medium">
                       Liam Johnson
                     </div>
-                    <div class="hidden text-sm text-muted-foreground md:inline">
+                    <div class="hidden f-text-xs text-muted-foreground md:inline">
                       liam@example.com
                     </div>
                   </TableCell>
@@ -129,7 +129,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     Sale
                   </TableCell>
                   <TableCell class="hidden xl:table-column">
-                    <Badge class="text-xs" variant="outline">
+                    <Badge class="f-text-2xs" variant="outline">
                       Approved
                     </Badge>
                   </TableCell>
@@ -145,7 +145,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     <div class="font-medium">
                       Olivia Smith
                     </div>
-                    <div class="hidden text-sm text-muted-foreground md:inline">
+                    <div class="hidden f-text-xs text-muted-foreground md:inline">
                       olivia@example.com
                     </div>
                   </TableCell>
@@ -153,7 +153,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     Refund
                   </TableCell>
                   <TableCell class="hidden xl:table-column">
-                    <Badge class="text-xs" variant="outline">
+                    <Badge class="f-text-2xs" variant="outline">
                       Declined
                     </Badge>
                   </TableCell>
@@ -169,7 +169,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     <div class="font-medium">
                       Noah Williams
                     </div>
-                    <div class="hidden text-sm text-muted-foreground md:inline">
+                    <div class="hidden f-text-xs text-muted-foreground md:inline">
                       noah@example.com
                     </div>
                   </TableCell>
@@ -177,7 +177,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     Subscription
                   </TableCell>
                   <TableCell class="hidden xl:table-column">
-                    <Badge class="text-xs" variant="outline">
+                    <Badge class="f-text-2xs" variant="outline">
                       Approved
                     </Badge>
                   </TableCell>
@@ -193,7 +193,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     <div class="font-medium">
                       Emma Brown
                     </div>
-                    <div class="hidden text-sm text-muted-foreground md:inline">
+                    <div class="hidden f-text-xs text-muted-foreground md:inline">
                       emma@example.com
                     </div>
                   </TableCell>
@@ -201,7 +201,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     Sale
                   </TableCell>
                   <TableCell class="hidden xl:table-column">
-                    <Badge class="text-xs" variant="outline">
+                    <Badge class="f-text-2xs" variant="outline">
                       Approved
                     </Badge>
                   </TableCell>
@@ -217,7 +217,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     <div class="font-medium">
                       Liam Johnson
                     </div>
-                    <div class="hidden text-sm text-muted-foreground md:inline">
+                    <div class="hidden f-text-xs text-muted-foreground md:inline">
                       liam@example.com
                     </div>
                   </TableCell>
@@ -225,7 +225,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     Sale
                   </TableCell>
                   <TableCell class="hidden xl:table-column">
-                    <Badge class="text-xs" variant="outline">
+                    <Badge class="f-text-2xs" variant="outline">
                       Approved
                     </Badge>
                   </TableCell>
@@ -244,16 +244,16 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
           <CardHeader>
             <CardTitle>Recent Sales</CardTitle>
           </CardHeader>
-          <CardContent class="grid gap-8">
-            <div class="flex items-center gap-4">
-              <Avatar class="hidden h-9 w-9 sm:flex">
+          <CardContent class="grid gap-32">
+            <div class="flex items-center gap-16">
+              <Avatar class="hidden h-36 w-36 sm:flex">
                 <AvatarFallback>OM</AvatarFallback>
               </Avatar>
-              <div class="grid gap-1">
-                <p class="text-sm font-medium leading-none">
+              <div class="grid gap-4">
+                <p class="f-text-xs font-medium leading-none">
                   Olivia Martin
                 </p>
-                <p class="text-sm text-muted-foreground">
+                <p class="f-text-xs text-muted-foreground">
                   olivia.martin@email.com
                 </p>
               </div>
@@ -261,15 +261,15 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                 +$1,999.00
               </div>
             </div>
-            <div class="flex items-center gap-4">
-              <Avatar class="hidden h-9 w-9 sm:flex">
+            <div class="flex items-center gap-16">
+              <Avatar class="hidden h-36 w-36 sm:flex">
                 <AvatarFallback>JL</AvatarFallback>
               </Avatar>
-              <div class="grid gap-1">
-                <p class="text-sm font-medium leading-none">
+              <div class="grid gap-4">
+                <p class="f-text-xs font-medium leading-none">
                   Jackson Lee
                 </p>
-                <p class="text-sm text-muted-foreground">
+                <p class="f-text-xs text-muted-foreground">
                   jackson.lee@email.com
                 </p>
               </div>
@@ -277,15 +277,15 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                 +$39.00
               </div>
             </div>
-            <div class="flex items-center gap-4">
-              <Avatar class="hidden h-9 w-9 sm:flex">
+            <div class="flex items-center gap-16">
+              <Avatar class="hidden h-36 w-36 sm:flex">
                 <AvatarFallback>IN</AvatarFallback>
               </Avatar>
-              <div class="grid gap-1">
-                <p class="text-sm font-medium leading-none">
+              <div class="grid gap-4">
+                <p class="f-text-xs font-medium leading-none">
                   Isabella Nguyen
                 </p>
-                <p class="text-sm text-muted-foreground">
+                <p class="f-text-xs text-muted-foreground">
                   isabella.nguyen@email.com
                 </p>
               </div>
@@ -293,15 +293,15 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                 +$299.00
               </div>
             </div>
-            <div class="flex items-center gap-4">
-              <Avatar class="hidden h-9 w-9 sm:flex">
+            <div class="flex items-center gap-16">
+              <Avatar class="hidden h-36 w-36 sm:flex">
                 <AvatarFallback>WK</AvatarFallback>
               </Avatar>
-              <div class="grid gap-1">
-                <p class="text-sm font-medium leading-none">
+              <div class="grid gap-4">
+                <p class="f-text-xs font-medium leading-none">
                   William Kim
                 </p>
-                <p class="text-sm text-muted-foreground">
+                <p class="f-text-xs text-muted-foreground">
                   will@email.com
                 </p>
               </div>
@@ -309,15 +309,15 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                 +$99.00
               </div>
             </div>
-            <div class="flex items-center gap-4">
-              <Avatar class="hidden h-9 w-9 sm:flex">
+            <div class="flex items-center gap-16">
+              <Avatar class="hidden h-36 w-36 sm:flex">
                 <AvatarFallback>SD</AvatarFallback>
               </Avatar>
-              <div class="grid gap-1">
-                <p class="text-sm font-medium leading-none">
+              <div class="grid gap-4">
+                <p class="f-text-xs font-medium leading-none">
                   Sofia Davis
                 </p>
-                <p class="text-sm text-muted-foreground">
+                <p class="f-text-xs text-muted-foreground">
                   sofia.davis@email.com
                 </p>
               </div>

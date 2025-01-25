@@ -12,7 +12,7 @@ const color = useColorMode()
     <DropdownMenuContent>
       <DropdownMenuGroup>
         <DropdownMenuItem
-          flex="~ gap-2"
+          flex="~ gap-8"
           :class="{ 'bg-accent text-accent-foreground': color.preference === 'light' }"
           @click="color.preference = 'light'"
         >
@@ -20,7 +20,7 @@ const color = useColorMode()
           <span>Light</span>
         </DropdownMenuItem>
         <DropdownMenuItem
-          flex="~ gap-2"
+          flex="~ gap-8"
           :class="{ 'bg-accent text-accent-foreground': color.preference === 'dark' }"
           @click="color.preference = 'dark'"
         >
@@ -28,7 +28,7 @@ const color = useColorMode()
           <span>Dark</span>
         </DropdownMenuItem>
         <DropdownMenuItem
-          flex="~ gap-2"
+          flex="~ gap-8"
           :class="{ 'bg-accent text-accent-foreground': color.preference === 'system' }"
           @click="color.preference = 'system'"
         >

@@ -19,7 +19,7 @@ const value = ref({
 </script>
 
 <template>
-  <div :class="cn('grid gap-2', $attrs.class ?? '')">
+  <div :class="cn('grid gap-8', $attrs.class ?? '')">
     <Popover>
       <PopoverTrigger as-child>
         <Button
@@ -30,7 +30,7 @@ const value = ref({
             !value && 'text-muted-foreground',
           )"
         >
-          <CalendarIcon class="mr-2 h-4 w-4" />
+          <CalendarIcon class="mr-8 h-16 w-16" />
 
           <template v-if="value.start">
             <template v-if="value.end">

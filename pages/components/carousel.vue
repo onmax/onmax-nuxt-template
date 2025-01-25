@@ -2,28 +2,28 @@
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
-    <div class="grid gap-2">
+  <div class="flex flex-col gap-16">
+    <div class="grid gap-8">
       <div>
-        <h2 class="text-2xl font-bold tracking-tight">
+        <h2 class="f-text-xl font-bold tracking-tight">
           Carousel
         </h2>
         <p class="text-muted-foreground">
           A carousel with motion and swipe built using Embla.
         </p>
       </div>
-      <div class="flex gap-2">
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+      <div class="flex gap-8">
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.shadcn-vue.com/docs/components/carousel"
             external
             target="_blank"
           >
-            <span class="i-radix-icons-code mr-2" />
+            <span class="i-radix-icons-code mr-8" />
             Component Source
           </NuxtLink>
         </Button>
-        <Button size="xs" variant="outline" class="text-xs" as-child>
+        <Button size="xs" variant="outline" class="f-text-2xs" as-child>
           <NuxtLink
             to="https://www.radix-vue.com/components/carousel"
             external
@@ -34,19 +34,19 @@
         </Button>
       </div>
     </div>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-16">
       <Card class="w-full">
         <CardHeader>
           <CardTitle>Basic</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="w-full flex items-center justify-center gap-4">
-            <Carousel class="relative max-w-xs w-full">
+          <div class="w-full flex items-center justify-center gap-16">
+            <Carousel class="relative max-w-320 w-full">
               <CarouselContent>
                 <CarouselItem v-for="(_, index) in 5" :key="index">
-                  <div class="p-1">
+                  <div class="p-4">
                     <Card>
-                      <CardContent class="aspect-square flex items-center justify-center p-6">
+                      <CardContent class="aspect-square flex items-center justify-center p-24">
                         <span class="text-4xl font-semibold">{{ index + 1 }}</span>
                       </CardContent>
                     </Card>
@@ -64,19 +64,19 @@
           <CardTitle>Sizes</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-200px w-full flex items-center justify-center gap-4">
+          <div class="min-h-800px w-full flex items-center justify-center gap-16">
             <Carousel
-              class="relative max-w-xs w-full"
+              class="relative max-w-320 w-full"
               :opts="{
                 align: 'start',
               }"
             >
               <CarouselContent>
                 <CarouselItem v-for="(_, index) in 5" :key="index" class="lg:basis-1/3 md:basis-1/2">
-                  <div class="p-1">
+                  <div class="p-4">
                     <Card>
-                      <CardContent class="aspect-square flex items-center justify-center p-6">
-                        <span class="text-2xl font-semibold">{{ index + 1 }}</span>
+                      <CardContent class="aspect-square flex items-center justify-center p-24">
+                        <span class="f-text-xl font-semibold">{{ index + 1 }}</span>
                       </CardContent>
                     </Card>
                   </div>
@@ -93,20 +93,20 @@
           <CardTitle>Orientation Vertical</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="min-h-350px w-full flex items-center justify-center gap-4">
+          <div class="min-h-1400px w-full flex items-center justify-center gap-16">
             <Carousel
               orientation="vertical"
-              class="relative max-w-xs w-full"
+              class="relative max-w-320 w-full"
               :opts="{
                 align: 'start',
               }"
             >
-              <CarouselContent class="h-150px -mt-1 md:h-200px">
-                <CarouselItem v-for="(_, index) in 5" :key="index" class="p-1 md:basis-1/2">
-                  <div class="p-1">
+              <CarouselContent class="h-600px -mt-4 md:h-800px">
+                <CarouselItem v-for="(_, index) in 5" :key="index" class="p-4 md:basis-1/2">
+                  <div class="p-4">
                     <Card>
-                      <CardContent class="flex items-center justify-center p-6">
-                        <span class="text-2xl font-semibold">{{ index + 1 }}</span>
+                      <CardContent class="flex items-center justify-center p-24">
+                        <span class="f-text-xl font-semibold">{{ index + 1 }}</span>
                       </CardContent>
                     </Card>
                   </div>

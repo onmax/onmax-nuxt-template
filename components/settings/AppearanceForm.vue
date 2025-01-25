@@ -30,7 +30,7 @@ const color = useColorMode()
 const onSubmit = handleSubmit((values) => {
   toast({
     title: 'You submitted the following values:',
-    description: h('pre', { class: 'mt-2 w-[340px] rounded-md bg-slate-950 p-4' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
+    description: h('pre', { class: 'mt-8 w-[340px] f-rounded bg-slate-950 p-16' }, h('code', { class: 'text-white' }, JSON.stringify(values, null, 2))),
   })
   if (values.theme === 'dark') {
     color.preference = 'dark'
@@ -43,15 +43,15 @@ const onSubmit = handleSubmit((values) => {
 
 <template>
   <div>
-    <h3 class="text-lg font-medium">
+    <h3 class="f-text-md font-medium">
       Appearance
     </h3>
-    <p class="text-sm text-muted-foreground">
+    <p class="f-text-xs text-muted-foreground">
       Customize the appearance of the app. Automatically switch between day and night themes.
     </p>
   </div>
   <Separator />
-  <form class="space-y-8" @submit="onSubmit">
+  <form class="space-y-422" @submit="onSubmit">
     <FormField v-slot="{ field }" name="font">
       <FormItem>
         <FormLabel>Font</FormLabel>
@@ -75,7 +75,7 @@ const onSubmit = handleSubmit((values) => {
               </option>
             </select>
           </FormControl>
-          <Icon name="i-radix-icons-chevron-down" class="pointer-events-none absolute right-3 top-2.5 h-4 w-4 opacity-50" />
+          <Icon name="i-radix-icons-chevron-down" class="pointer-events-none absolute right-12 top-10 h-16 w-16 opacity-50" />
         </div>
         <FormDescription>
           Set the font you want to use in the dashboard.
@@ -85,7 +85,7 @@ const onSubmit = handleSubmit((values) => {
     </FormField>
 
     <FormField v-slot="{ componentField }" type="radio" name="theme">
-      <FormItem class="space-y-1">
+      <FormItem class="space-y-4">
         <FormLabel>Theme</FormLabel>
         <FormDescription>
           Select the theme for the dashboard.
@@ -93,7 +93,7 @@ const onSubmit = handleSubmit((values) => {
         <FormMessage />
 
         <RadioGroup
-          class="grid grid-cols-2 max-w-md gap-8 pt-2"
+          class="grid grid-cols-2 max-w-448 gap-32 pt-8"
           v-bind="componentField"
         >
           <FormItem>
@@ -101,23 +101,23 @@ const onSubmit = handleSubmit((values) => {
               <FormControl>
                 <RadioGroupItem value="light" class="sr-only" />
               </FormControl>
-              <div class="items-center border-2 border-muted rounded-md p-1 hover:border-accent">
-                <div class="rounded-sm bg-[#ecedef] p-2 space-y-2">
-                  <div class="rounded-md bg-white p-2 shadow-sm space-y-2">
-                    <div class="h-2 w-20 rounded-lg bg-[#ecedef]" />
-                    <div class="h-2 w-[100px] rounded-lg bg-[#ecedef]" />
+              <div class="items-center border-2 border-muted f-rounded p-4 hover:border-accent">
+                <div class="f-rounded bg-[#ecedef] p-8 space-y-8">
+                  <div class="f-rounded bg-white p-8 shadow-sm space-y-8">
+                    <div class="h-8 w-80 f-rounded bg-[#ecedef]" />
+                    <div class="h-8 w-[100px] f-rounded bg-[#ecedef]" />
                   </div>
-                  <div class="flex items-center rounded-md bg-white p-2 shadow-sm space-x-2">
-                    <div class="h-4 w-4 rounded-full bg-[#ecedef]" />
-                    <div class="h-2 w-[100px] rounded-lg bg-[#ecedef]" />
+                  <div class="flex items-center f-rounded bg-white p-8 shadow-sm space-x-8">
+                    <div class="h-16 w-16 rounded-full bg-[#ecedef]" />
+                    <div class="h-8 w-[100px] f-rounded bg-[#ecedef]" />
                   </div>
-                  <div class="flex items-center rounded-md bg-white p-2 shadow-sm space-x-2">
-                    <div class="h-4 w-4 rounded-full bg-[#ecedef]" />
-                    <div class="h-2 w-[100px] rounded-lg bg-[#ecedef]" />
+                  <div class="flex items-center f-rounded bg-white p-8 shadow-sm space-x-8">
+                    <div class="h-16 w-16 rounded-full bg-[#ecedef]" />
+                    <div class="h-8 w-[100px] f-rounded bg-[#ecedef]" />
                   </div>
                 </div>
               </div>
-              <span class="block w-full p-2 text-center font-normal">
+              <span class="block w-full p-8 text-center font-normal">
                 Light
               </span>
             </FormLabel>
@@ -127,23 +127,23 @@ const onSubmit = handleSubmit((values) => {
               <FormControl>
                 <RadioGroupItem value="dark" class="sr-only" />
               </FormControl>
-              <div class="items-center border-2 border-muted rounded-md bg-popover p-1 hover:bg-accent hover:text-accent-foreground">
-                <div class="rounded-sm bg-slate-950 p-2 space-y-2">
-                  <div class="rounded-md bg-slate-800 p-2 shadow-sm space-y-2">
-                    <div class="h-2 w-20 rounded-lg bg-slate-400" />
-                    <div class="h-2 w-[100px] rounded-lg bg-slate-400" />
+              <div class="items-center border-2 border-muted f-rounded bg-popover p-4 hover:bg-accent hover:text-accent-foreground">
+                <div class="f-rounded bg-slate-950 p-8 space-y-8">
+                  <div class="f-rounded bg-slate-800 p-8 shadow-sm space-y-8">
+                    <div class="h-8 w-80 f-rounded bg-slate-400" />
+                    <div class="h-8 w-[100px] f-rounded bg-slate-400" />
                   </div>
-                  <div class="flex items-center rounded-md bg-slate-800 p-2 shadow-sm space-x-2">
-                    <div class="h-4 w-4 rounded-full bg-slate-400" />
-                    <div class="h-2 w-[100px] rounded-lg bg-slate-400" />
+                  <div class="flex items-center f-rounded bg-slate-800 p-8 shadow-sm space-x-8">
+                    <div class="h-16 w-16 rounded-full bg-slate-400" />
+                    <div class="h-8 w-[100px] f-rounded bg-slate-400" />
                   </div>
-                  <div class="flex items-center rounded-md bg-slate-800 p-2 shadow-sm space-x-2">
-                    <div class="h-4 w-4 rounded-full bg-slate-400" />
-                    <div class="h-2 w-[100px] rounded-lg bg-slate-400" />
+                  <div class="flex items-center f-rounded bg-slate-800 p-8 shadow-sm space-x-8">
+                    <div class="h-16 w-16 rounded-full bg-slate-400" />
+                    <div class="h-8 w-[100px] f-rounded bg-slate-400" />
                   </div>
                 </div>
               </div>
-              <span class="block w-full p-2 text-center font-normal">
+              <span class="block w-full p-8 text-center font-normal">
                 Dark
               </span>
             </FormLabel>

@@ -17,9 +17,9 @@ const forwarded = useForwardProps(delegatedProps)
 </script>
 
 <template>
-  <NumberFieldIncrement v-bind="forwarded" :class="cn('absolute top-1/2 -translate-y-1/2 right-0 disabled:cursor-not-allowed disabled:opacity-20 p-3', props.class)">
+  <NumberFieldIncrement v-bind="forwarded" :class="cn('absolute top-1/2 -translate-y-1/2 right-0 disabled:cursor-not-allowed disabled:opacity-20 p-12', props.class)">
     <slot>
-      <Plus class="h-4 w-4" />
+      <Plus class="h-16 w-16" />
     </slot>
   </NumberFieldIncrement>
 </template>

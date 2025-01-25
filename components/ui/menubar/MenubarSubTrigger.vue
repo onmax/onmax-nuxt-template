@@ -18,12 +18,12 @@ const forwardedProps = useForwardProps(delegatedProps)
   <MenubarSubTrigger
     v-bind="forwardedProps"
     :class="cn(
-      'flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground',
-      inset && 'pl-8',
+      'flex cursor-default select-none items-center f-rounded px-8 py-6 f-text-xs outline-none focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground',
+      inset && 'pl-32',
       props.class,
     )"
   >
     <slot />
-    <Icon name="i-radix-icons-chevron-right" class="ml-auto h-4 w-4" />
+    <Icon name="i-radix-icons-chevron-right" class="ml-auto h-16 w-16" />
   </MenubarSubTrigger>
 </template>

@@ -56,9 +56,9 @@ const table = useVueTable({
 </script>
 
 <template>
-  <div class="space-y-4">
+  <div class="space-y-80">
     <DataTableToolbar :table="table" />
-    <div class="border rounded-md">
+    <div class="border f-rounded">
       <Table>
         <TableHeader>
           <TableRow v-for="headerGroup in table.getHeaderGroups()" :key="headerGroup.id">
@@ -83,7 +83,7 @@ const table = useVueTable({
           <TableRow v-else>
             <TableCell
               :colspan="columns.length"
-              class="h-24 text-center"
+              class="h-96 text-center"
             >
               No results.
             </TableCell>
