@@ -11,6 +11,7 @@ import {
 import presetAnimations from 'unocss-preset-animations'
 import { builtinColors, presetShadcn } from 'unocss-preset-shadcn'
 import { presetScalePx } from 'unocss-preset-scale-px'
+import { presetFluidSizing } from 'unocss-preset-fluid-sizing'
 
 export default defineConfig({
   variants: [
@@ -58,6 +59,7 @@ export default defineConfig({
     presetAnimations(),
     presetShadcn(builtinColors.map(c => ({ color: c }))),
     presetScalePx(),
+    presetFluidSizing(),
   ],
   transformers: [
     transformerDirectives(),
