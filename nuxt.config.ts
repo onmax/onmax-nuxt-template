@@ -10,7 +10,13 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
+    '@nuxthub/core',
   ],
+
+  hub: {
+    database: true,
+    kv: true,
+  },
 
   css: [
     '@unocss/reset/tailwind.css',
