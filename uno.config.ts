@@ -30,6 +30,19 @@ export default defineConfig({
       },
       multiPass: true,
     },
+    (matcher) => {
+      const dataStates = ['open', 'closed', 'checked', 'active', 'hidden', 'unchecked', 'visible', 'on']
+      for (const state of dataStates) {
+        const prefix = `data-${state}:`
+        if (matcher.startsWith(prefix)) {
+          return {
+            matcher: matcher.slice(prefix.length),
+            // Ensures styles apply only to elements with data-state=${state} that don't contain nested data-state elements.  
+            selector: s => `[data-state=${state}]:not(:has([data-state])) ${s}, [data-state=${state}]:not(:has([data-state]))${s}`,
+          }
+        }
+      }
+    },
   ],
   theme: {
     colors: {
@@ -71,7 +84,7 @@ export default defineConfig({
         // the default
         /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
         // include js/ts files
-        'components/ui/**/*.{js,ts}',
+        'app/components/ui/**/*.{js,ts}',
       ],
     },
   },

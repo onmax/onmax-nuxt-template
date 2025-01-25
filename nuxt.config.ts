@@ -1,3 +1,5 @@
+import { env } from 'node:process'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -31,6 +33,20 @@ export default defineNuxtConfig({
     inlineStyles: false,
   },
 
+  runtimeConfig: {
+    betterAuthUrl: env.BETTER_AUTH_URL,
+    github: {
+      clientId: env.GITHUB_CLIENT_ID!,
+      clientSecret: env.GITHUB_CLIENT_SECRET!,
+    },
+    public: {
+      auth: {
+        redirectUserTo: '/user',
+        redirectGuestTo: '/',
+      },
+    },
+  },
+
   eslint: {
     config: {
       standalone: false,
@@ -48,5 +64,11 @@ export default defineNuxtConfig({
     ],
   },
 
+  future: { compatibilityVersion: 4 },
+
   compatibilityDate: '2024-12-14',
+
+  shadcn: {
+    componentDir: './app/components/ui',
+  },
 })
