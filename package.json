@@ -42,7 +42,7 @@
     "postinstall": "nuxt prepare",
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint .",
-    "format": "eslint --fix ."
+    "lint:fix": "eslint --fix ."
   },
   "dependencies": {
     "@internationalized/date": "^3.6.0",

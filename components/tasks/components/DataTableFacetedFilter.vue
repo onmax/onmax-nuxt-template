@@ -31,7 +31,7 @@ const selectedValues = computed(() => new Set(props.column?.getFilterValue() as 
           <Separator orientation="vertical" class="mx-8 h-16" />
           <Badge
             variant="secondary"
-            class="f-rounded px-4 font-normal lg:hidden"
+            class="px-4 font-normal f-rounded lg:hidden"
           >
             {{ selectedValues.size }}
           </Badge>
@@ -39,7 +39,7 @@ const selectedValues = computed(() => new Set(props.column?.getFilterValue() as 
             <Badge
               v-if="selectedValues.size > 2"
               variant="secondary"
-              class="f-rounded px-4 font-normal"
+              class="px-4 font-normal f-rounded"
             >
               {{ selectedValues.size }} selected
             </Badge>
@@ -50,7 +50,7 @@ const selectedValues = computed(() => new Set(props.column?.getFilterValue() as 
                   .filter((option: any) => selectedValues.has(option.value))"
                 :key="item.value"
                 variant="secondary"
-                class="f-rounded px-4 font-normal"
+                class="px-4 font-normal f-rounded"
               >
                 {{ item.label }}
               </Badge>
@@ -98,7 +98,7 @@ const selectedValues = computed(() => new Set(props.column?.getFilterValue() as 
               </div>
               <component :is="option.icon" v-if="option.icon" class="mr-8 h-16 w-16 text-muted-foreground" />
               <span>{{ option.label }}</span>
-              <span v-if="facets?.get(option.value)" class="ml-auto h-16 w-16 flex items-center justify-center f-text-2xs font-mono">
+              <span v-if="facets?.get(option.value)" class="ml-auto h-16 w-16 flex items-center justify-center font-mono f-text-2xs">
                 {{ facets.get(option.value) }}
               </span>
             </CommandItem>

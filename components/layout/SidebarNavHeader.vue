@@ -23,10 +23,10 @@ const activeTeam = ref(props.teams[0])
             size="lg"
             class="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
           >
-            <div class="aspect-square size-32 flex items-center justify-center f-rounded bg-sidebar-primary text-sidebar-primary-foreground">
+            <div class="aspect-square size-32 flex items-center justify-center bg-sidebar-primary text-sidebar-primary-foreground f-rounded">
               <Icon :name="activeTeam.logo" class="size-16" />
             </div>
-            <div class="grid flex-1 text-left f-text-xs leading-tight">
+            <div class="grid flex-1 text-left leading-tight f-text-xs">
               <span class="truncate font-semibold">
                 {{ activeTeam.name }}
               </span>
@@ -40,7 +40,7 @@ const activeTeam = ref(props.teams[0])
           align="start"
           :side="isMobile ? 'bottom' : 'right'"
         >
-          <DropdownMenuLabel class="f-text-2xs text-muted-foreground">
+          <DropdownMenuLabel class="text-muted-foreground f-text-2xs">
             Teams
           </DropdownMenuLabel>
           <DropdownMenuItem
@@ -57,7 +57,7 @@ const activeTeam = ref(props.teams[0])
           </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem class="gap-8 p-8">
-            <div class="size-24 flex items-center justify-center border f-rounded bg-background">
+            <div class="size-24 flex items-center justify-center border bg-background f-rounded">
               <Icon name="i-lucide-plus" class="size-16" />
             </div>
             <div class="text-muted-foreground font-medium">

@@ -67,7 +67,7 @@ function onSubmit(event: Event) {
         </Label>
         <NuxtLink
           to="/forgot-password"
-          class="ml-auto inline-block f-text-xs underline"
+          class="ml-auto inline-block underline f-text-xs"
         >
           Forgot your password?
         </NuxtLink>
@@ -79,7 +79,7 @@ function onSubmit(event: Event) {
       Login
     </Button>
   </form>
-  <div class="mt-16 text-center f-text-xs text-muted-foreground">
+  <div class="mt-16 text-center text-muted-foreground f-text-xs">
     Don't have an account?
     <NuxtLink to="/register" class="underline">
       Sign up

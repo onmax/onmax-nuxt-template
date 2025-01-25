@@ -16,7 +16,7 @@ function handleOpenChange() {
   <div class="flex flex-col gap-16">
     <div class="grid gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Command
         </h2>
         <p class="text-muted-foreground">
@@ -52,7 +52,7 @@ function handleOpenChange() {
         </CardHeader>
         <CardContent>
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
-            <Command class="max-w-[450px] border f-rounded shadow-448">
+            <Command class="shadow-448 max-w-[450px] border f-rounded">
               <CommandInput placeholder="Type a command or search..." />
               <CommandList>
                 <CommandEmpty>No results found.</CommandEmpty>
@@ -101,11 +101,11 @@ function handleOpenChange() {
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <div>
               <div class="flex flex-col items-center gap-16">
-                <p class="f-text-xs text-muted-foreground">
+                <p class="text-muted-foreground f-text-xs">
                   Press
                   <BaseKbd>{{ metaSymbol }}J</BaseKbd>
                 </p>
-                <span class="f-text-xs text-muted-foreground">or</span>
+                <span class="text-muted-foreground f-text-xs">or</span>
                 <Button size="sm" @click="handleOpenChange">
                   Click Here
                 </Button>

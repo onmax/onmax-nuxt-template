@@ -10,13 +10,13 @@ defineProps<DataTablePaginationProps>()
 
 <template>
   <div class="flex items-center justify-between px-8">
-    <div class="flex-1 f-text-xs text-muted-foreground">
+    <div class="flex-1 text-muted-foreground f-text-xs">
       {{ table.getFilteredSelectedRowModel().rows.length }} of
       {{ table.getFilteredRowModel().rows.length }} row(s) selected.
     </div>
     <div class="flex items-center space-x-84 lg:space-x-48">
       <div class="flex items-center space-x-8">
-        <p class="f-text-xs font-medium">
+        <p class="font-medium f-text-xs">
           Rows per page
         </p>
         <Select
@@ -33,7 +33,7 @@ defineProps<DataTablePaginationProps>()
           </SelectContent>
         </Select>
       </div>
-      <div class="w-[100px] flex items-center justify-center f-text-xs font-medium">
+      <div class="w-[100px] flex items-center justify-center font-medium f-text-xs">
         Page {{ table.getState().pagination.pageIndex + 1 }} of
         {{ table.getPageCount() }}
       </div>

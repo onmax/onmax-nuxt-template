@@ -15,8 +15,8 @@ defineProps<{
           $attrs.class ?? '',
         )"
       >
-        <div class="f-text-xs font-medium leading-none">{{ title }}</div>
-        <p class="line-clamp-8 f-text-xs text-muted-foreground leading-snug">
+        <div class="font-medium leading-none f-text-xs">{{ title }}</div>
+        <p class="line-clamp-8 text-muted-foreground leading-snug f-text-xs">
           <slot />
         </p>
       </a>

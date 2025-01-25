@@ -9,9 +9,9 @@ import {
   transformerVariantGroup,
 } from 'unocss'
 import presetAnimations from 'unocss-preset-animations'
-import { builtinColors, presetShadcn } from 'unocss-preset-shadcn'
-import { presetScalePx } from 'unocss-preset-scale-px'
 import { presetFluidSizing } from 'unocss-preset-fluid-sizing'
+import { presetScalePx } from 'unocss-preset-scale-px'
+import { builtinColors, presetShadcn } from 'unocss-preset-shadcn'
 
 export default defineConfig({
   variants: [
@@ -114,4 +114,3 @@ export default defineConfig({
     },
   ],
 })
-

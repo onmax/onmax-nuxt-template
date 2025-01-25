@@ -54,11 +54,11 @@ function getBadgeVariantFromLabel(label: string) {
               </div>
             </div>
 
-            <div class="f-text-2xs font-medium">
+            <div class="font-medium f-text-2xs">
               {{ item.subject }}
             </div>
           </div>
-          <div class="line-clamp-8 f-text-2xs text-muted-foreground">
+          <div class="line-clamp-8 text-muted-foreground f-text-2xs">
             {{ item.text.substring(0, 300) }}
           </div>
           <div class="flex items-center gap-8">

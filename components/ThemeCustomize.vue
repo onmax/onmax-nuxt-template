@@ -79,7 +79,7 @@ const colorMode = useColorMode()
             <span class="h-20 w-20 flex items-center justify-center rounded-full" :style="{ backgroundColor: backgroundColor(color) }">
               <Icon v-if="theme === color" name="i-radix-icons-check" size="16" class="text-white" />
             </span>
-            <span class="f-text-2xs capitalize">{{ color }}</span>
+            <span class="capitalize f-text-2xs">{{ color }}</span>
           </Button>
         </template>
       </div>
@@ -94,7 +94,7 @@ const colorMode = useColorMode()
             :class="{ 'border-primary border-2': radius === r }"
             @click="setRadius(r)"
           >
-            <span class="f-text-2xs capitalize">{{ r }}</span>
+            <span class="capitalize f-text-2xs">{{ r }}</span>
           </Button>
         </template>
       </div>
@@ -109,7 +109,7 @@ const colorMode = useColorMode()
           @click="colorMode.preference = 'light'"
         >
           <Icon name="i-ph-sun-dim-duotone" size="16" />
-          <span class="f-text-2xs capitalize">Light</span>
+          <span class="capitalize f-text-2xs">Light</span>
         </Button>
         <Button
           class="justify-center gap-8"
@@ -118,7 +118,7 @@ const colorMode = useColorMode()
           @click="colorMode.preference = 'dark'"
         >
           <Icon name="i-ph-moon-stars-duotone" size="16" />
-          <span class="f-text-2xs capitalize">Dark</span>
+          <span class="capitalize f-text-2xs">Dark</span>
         </Button>
         <Button
           class="justify-center gap-8"
@@ -127,7 +127,7 @@ const colorMode = useColorMode()
           @click="colorMode.preference = 'system'"
         >
           <Icon name="i-lucide-monitor" size="16" />
-          <span class="f-text-2xs capitalize">System</span>
+          <span class="capitalize f-text-2xs">System</span>
         </Button>
       </div>
     </div>

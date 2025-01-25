@@ -5,7 +5,7 @@
   <div class="flex flex-col gap-16">
     <div class="grid gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Collapsible
         </h2>
         <p class="text-muted-foreground">
@@ -46,7 +46,7 @@
             >
               <CollapsibleTrigger as-child>
                 <div class="flex cursor-pointer items-center justify-between px-16 space-x-80">
-                  <h4 class="f-text-xs font-semibold">
+                  <h4 class="font-semibold f-text-xs">
                     @peduarte starred 3 repositories
                   </h4>
                   <Button variant="ghost" size="sm" class="w-36 p-0">
@@ -55,14 +55,14 @@
                   </Button>
                 </div>
               </CollapsibleTrigger>
-              <div class="border f-rounded px-16 py-12 f-text-xs font-mono">
+              <div class="border px-16 py-12 font-mono f-text-xs f-rounded">
                 @radix-ui/primitives
               </div>
               <CollapsibleContent class="space-y-8">
-                <div class="border f-rounded px-16 py-12 f-text-xs font-mono">
+                <div class="border px-16 py-12 font-mono f-text-xs f-rounded">
                   @radix-ui/colors
                 </div>
-                <div class="border f-rounded px-16 py-12 f-text-xs font-mono">
+                <div class="border px-16 py-12 font-mono f-text-xs f-rounded">
                   @stitches/react
                 </div>
               </CollapsibleContent>

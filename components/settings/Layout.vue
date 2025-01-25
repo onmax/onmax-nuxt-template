@@ -5,7 +5,7 @@
 <template>
   <div class="pb-64 space-y-24">
     <div class="space-y-2">
-      <h2 class="f-text-xl font-bold tracking-tight">
+      <h2 class="font-bold tracking-tight f-text-xl">
         Settings
       </h2>
       <p class="text-muted-foreground">

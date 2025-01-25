@@ -59,10 +59,10 @@ const onSubmit = handleSubmit((values) => {
 
 <template>
   <div>
-    <h3 class="f-text-md font-medium">
+    <h3 class="font-medium f-text-md">
       Display
     </h3>
-    <p class="f-text-xs text-muted-foreground">
+    <p class="text-muted-foreground f-text-xs">
       Turn items on or off to control what's displayed in the app.
     </p>
   </div>

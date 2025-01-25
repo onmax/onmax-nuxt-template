@@ -5,7 +5,7 @@
   <div class="flex flex-col gap-16">
     <div class="grid gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Carousel
         </h2>
         <p class="text-muted-foreground">
@@ -76,7 +76,7 @@
                   <div class="p-4">
                     <Card>
                       <CardContent class="aspect-square flex items-center justify-center p-24">
-                        <span class="f-text-xl font-semibold">{{ index + 1 }}</span>
+                        <span class="font-semibold f-text-xl">{{ index + 1 }}</span>
                       </CardContent>
                     </Card>
                   </div>
@@ -106,7 +106,7 @@
                   <div class="p-4">
                     <Card>
                       <CardContent class="flex items-center justify-center p-24">
-                        <span class="f-text-xl font-semibold">{{ index + 1 }}</span>
+                        <span class="font-semibold f-text-xl">{{ index + 1 }}</span>
                       </CardContent>
                     </Card>
                   </div>

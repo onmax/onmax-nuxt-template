@@ -12,7 +12,7 @@ const forwarded = useForwardPropsEmits(props, emits)
 
 <template>
   <Dialog v-bind="forwarded">
-    <DialogContent class="overflow-hidden p-0 shadow-512">
+    <DialogContent class="shadow-512 overflow-hidden p-0">
       <VisuallyHidden as-child>
         <DialogTitle />
       </VisuallyHidden>

@@ -179,7 +179,7 @@ watch(() => defaultCollapse.value, () => {
           <MailDisplay v-if="selectedMailData" :mail="selectedMailData" @close="selectedMail = ''" />
           <Tabs v-else default-value="all">
             <div class="flex items-center px-16 py-8">
-              <h1 class="f-text-lg font-bold">
+              <h1 class="font-bold f-text-lg">
                 Inbox
               </h1>
               <TabsList class="ml-auto">

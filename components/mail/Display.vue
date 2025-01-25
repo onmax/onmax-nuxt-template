@@ -75,7 +75,7 @@ const today = new Date()
             </PopoverTrigger>
             <PopoverContent class="w-full flex p-0">
               <div class="flex flex-col gap-8 border-r px-8 py-16">
-                <div class="px-16 f-text-xs font-medium">
+                <div class="px-16 font-medium f-text-xs">
                   Snooze until
                 </div>
                 <div class="grid min-w-[250px] gap-4">
@@ -191,7 +191,7 @@ const today = new Date()
             </div>
           </div>
         </div>
-        <div v-if="mail.date" class="ml-auto f-text-2xs text-muted-foreground">
+        <div v-if="mail.date" class="ml-auto text-muted-foreground f-text-2xs">
           {{ format(new Date(mail.date), "PPpp") }}
         </div>
       </div>
@@ -210,7 +210,7 @@ const today = new Date()
             <div class="flex items-center">
               <Label
                 html-for="mute"
-                class="flex items-center gap-8 f-text-2xs font-normal"
+                class="flex items-center gap-8 font-normal f-text-2xs"
               >
                 <Switch id="mute" aria-label="Mute thread" /> Mute this
                 thread

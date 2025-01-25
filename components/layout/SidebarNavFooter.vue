@@ -33,7 +33,7 @@ const showModalTheme = ref(false)
                 CN
               </AvatarFallback>
             </Avatar>
-            <div class="grid flex-1 text-left f-text-xs leading-tight">
+            <div class="grid flex-1 text-left leading-tight f-text-xs">
               <span class="truncate font-semibold">{{ user.name }}</span>
               <span class="truncate f-text-2xs">{{ user.email }}</span>
             </div>
@@ -53,7 +53,7 @@ const showModalTheme = ref(false)
                   CN
                 </AvatarFallback>
               </Avatar>
-              <div class="grid flex-1 text-left f-text-xs leading-tight">
+              <div class="grid flex-1 text-left leading-tight f-text-xs">
                 <span class="truncate font-semibold">{{ user.name }}</span>
                 <span class="truncate f-text-2xs">{{ user.email }}</span>
               </div>
@@ -108,7 +108,7 @@ const showModalTheme = ref(false)
     <DialogContent>
       <DialogHeader>
         <DialogTitle>Customize</DialogTitle>
-        <DialogDescription class="f-text-2xs text-muted-foreground">
+        <DialogDescription class="text-muted-foreground f-text-2xs">
           Pick a style and color for your components.
         </DialogDescription>
       </DialogHeader>

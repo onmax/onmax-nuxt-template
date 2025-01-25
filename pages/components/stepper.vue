@@ -44,7 +44,7 @@ const steps = [
   <div class="flex flex-col gap-16">
     <div class="grid gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Stepper
         </h2>
         <p class="text-muted-foreground">
@@ -144,13 +144,13 @@ const steps = [
                 <div class="mt-20 flex flex-col items-center text-center">
                   <StepperTitle
                     :class="[state === 'active' && 'text-primary']"
-                    class="f-text-xs font-semibold transition lg:text-base"
+                    class="font-semibold transition f-text-xs lg:text-base"
                   >
                     {{ step.title }}
                   </StepperTitle>
                   <StepperDescription
                     :class="[state === 'active' && 'text-primary']"
-                    class="sr-only f-text-2xs text-muted-foreground transition md:not-sr-only lg:f-text-xs"
+                    class="sr-only text-muted-foreground transition f-text-2xs lg:f-text-xs md:not-sr-only"
                   >
                     {{ step.description }}
                   </StepperDescription>
@@ -195,13 +195,13 @@ const steps = [
                 <div class="flex flex-col gap-4">
                   <StepperTitle
                     :class="[state === 'active' && 'text-primary']"
-                    class="f-text-xs font-semibold transition lg:text-base"
+                    class="font-semibold transition f-text-xs lg:text-base"
                   >
                     {{ step.title }}
                   </StepperTitle>
                   <StepperDescription
                     :class="[state === 'active' && 'text-primary']"
-                    class="sr-only f-text-2xs text-muted-foreground transition md:not-sr-only lg:f-text-xs"
+                    class="sr-only text-muted-foreground transition f-text-2xs lg:f-text-xs md:not-sr-only"
                   >
                     {{ step.description }}
                   </StepperDescription>

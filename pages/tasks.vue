@@ -8,7 +8,7 @@ import tasks from '@/components/tasks/data/tasks.json'
   <div class="w-full flex flex-col items-stretch gap-16">
     <div class="flex flex-wrap items-end justify-between gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Tasks
         </h2>
         <p class="text-muted-foreground">

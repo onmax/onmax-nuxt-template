@@ -53,10 +53,10 @@ const onSubmit = handleSubmit((values) => {
 
 <template>
   <div>
-    <h3 class="f-text-md font-medium">
+    <h3 class="font-medium f-text-md">
       Profile
     </h3>
-    <p class="f-text-xs text-muted-foreground">
+    <p class="text-muted-foreground f-text-xs">
       This is how others will see you on the site.
     </p>
   </div>

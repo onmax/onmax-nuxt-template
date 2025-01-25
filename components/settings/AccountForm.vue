@@ -56,10 +56,10 @@ async function onSubmit(values: any) {
 
 <template>
   <div>
-    <h3 class="f-text-md font-medium">
+    <h3 class="font-medium f-text-md">
       Account
     </h3>
-    <p class="f-text-xs text-muted-foreground">
+    <p class="text-muted-foreground f-text-xs">
       Update your account settings. Set your preferred language and timezone.
     </p>
   </div>

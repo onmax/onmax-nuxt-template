@@ -5,7 +5,7 @@
   <div class="flex flex-col gap-16">
     <div class="grid gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Popover
         </h2>
         <p class="text-muted-foreground">
@@ -53,7 +53,7 @@
                     <h4 class="font-medium leading-none">
                       Dimensions
                     </h4>
-                    <p class="f-text-xs text-muted-foreground">
+                    <p class="text-muted-foreground f-text-xs">
                       Set the dimensions for the layer.
                     </p>
                   </div>

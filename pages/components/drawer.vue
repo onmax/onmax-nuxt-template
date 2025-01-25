@@ -25,7 +25,7 @@ const data = [
   <div class="flex flex-col gap-16">
     <div class="grid gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Dialog
         </h2>
         <p class="text-muted-foreground">

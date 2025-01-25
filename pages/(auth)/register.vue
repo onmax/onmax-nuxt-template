@@ -8,15 +8,15 @@ definePageMeta({
   <LayoutAuth>
     <div class="grid mx-auto max-w-320 gap-24">
       <div class="flex flex-col text-center space-y-8">
-        <h1 class="f-text-xl font-semibold tracking-tight">
+        <h1 class="font-semibold tracking-tight f-text-xl">
           Create an account
         </h1>
-        <p class="f-text-xs text-muted-foreground">
+        <p class="text-muted-foreground f-text-xs">
           Enter your email below to create your account
         </p>
       </div>
       <AuthSignUp />
-      <p class="text-center f-text-xs text-muted-foreground">
+      <p class="text-center text-muted-foreground f-text-xs">
         Already have an account?
         <NuxtLink
           to="/login"
@@ -25,7 +25,7 @@ definePageMeta({
           Login
         </NuxtLink>
       </p>
-      <p class="px-32 text-center f-text-xs text-muted-foreground">
+      <p class="px-32 text-center text-muted-foreground f-text-xs">
         By clicking continue, you agree to our
         <a
           href="/terms"

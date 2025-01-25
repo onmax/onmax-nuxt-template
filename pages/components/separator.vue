@@ -5,7 +5,7 @@
   <div class="flex flex-col gap-16">
     <div class="grid gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Separator
         </h2>
         <p class="text-muted-foreground">
@@ -43,10 +43,10 @@
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <div>
               <div class="space-y-4">
-                <h4 class="f-text-xs font-medium leading-none">
+                <h4 class="font-medium leading-none f-text-xs">
                   Radix Primitives
                 </h4>
-                <p class="f-text-xs text-muted-foreground">
+                <p class="text-muted-foreground f-text-xs">
                   An open-source UI component library.
                 </p>
               </div>

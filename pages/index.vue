@@ -5,7 +5,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
 <template>
   <div class="w-full flex flex-col gap-16">
     <div class="flex flex-wrap items-center justify-between gap-8">
-      <h2 class="f-text-xl font-bold tracking-tight">
+      <h2 class="font-bold tracking-tight f-text-xl">
         Dashboard
       </h2>
       <div class="flex items-center space-x-8">
@@ -17,64 +17,64 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
       <div class="grid gap-16 lg:grid-cols-4 md:grid-cols-2 md:gap-32">
         <Card>
           <CardHeader class="flex flex-row items-center justify-between pb-8 space-y-0">
-            <CardTitle class="f-text-xs font-medium">
+            <CardTitle class="font-medium f-text-xs">
               Total Revenue
             </CardTitle>
             <DollarSign class="h-16 w-16 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div class="f-text-xl font-bold">
+            <div class="font-bold f-text-xl">
               $45,231.89
             </div>
-            <p class="f-text-2xs text-muted-foreground">
+            <p class="text-muted-foreground f-text-2xs">
               +20.1% from last month
             </p>
           </CardContent>
         </Card>
         <Card>
           <CardHeader class="flex flex-row items-center justify-between pb-8 space-y-0">
-            <CardTitle class="f-text-xs font-medium">
+            <CardTitle class="font-medium f-text-xs">
               Subscriptions
             </CardTitle>
             <Users class="h-16 w-16 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div class="f-text-xl font-bold">
+            <div class="font-bold f-text-xl">
               +2350
             </div>
-            <p class="f-text-2xs text-muted-foreground">
+            <p class="text-muted-foreground f-text-2xs">
               +180.1% from last month
             </p>
           </CardContent>
         </Card>
         <Card>
           <CardHeader class="flex flex-row items-center justify-between pb-8 space-y-0">
-            <CardTitle class="f-text-xs font-medium">
+            <CardTitle class="font-medium f-text-xs">
               Sales
             </CardTitle>
             <CreditCard class="h-16 w-16 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div class="f-text-xl font-bold">
+            <div class="font-bold f-text-xl">
               +12,234
             </div>
-            <p class="f-text-2xs text-muted-foreground">
+            <p class="text-muted-foreground f-text-2xs">
               +19% from last month
             </p>
           </CardContent>
         </Card>
         <Card>
           <CardHeader class="flex flex-row items-center justify-between pb-8 space-y-0">
-            <CardTitle class="f-text-xs font-medium">
+            <CardTitle class="font-medium f-text-xs">
               Active Now
             </CardTitle>
             <Activity class="h-16 w-16 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div class="f-text-xl font-bold">
+            <div class="font-bold f-text-xl">
               +573
             </div>
-            <p class="f-text-2xs text-muted-foreground">
+            <p class="text-muted-foreground f-text-2xs">
               +201 since last hour
             </p>
           </CardContent>
@@ -121,7 +121,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     <div class="font-medium">
                       Liam Johnson
                     </div>
-                    <div class="hidden f-text-xs text-muted-foreground md:inline">
+                    <div class="hidden text-muted-foreground f-text-xs md:inline">
                       liam@example.com
                     </div>
                   </TableCell>
@@ -145,7 +145,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     <div class="font-medium">
                       Olivia Smith
                     </div>
-                    <div class="hidden f-text-xs text-muted-foreground md:inline">
+                    <div class="hidden text-muted-foreground f-text-xs md:inline">
                       olivia@example.com
                     </div>
                   </TableCell>
@@ -169,7 +169,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     <div class="font-medium">
                       Noah Williams
                     </div>
-                    <div class="hidden f-text-xs text-muted-foreground md:inline">
+                    <div class="hidden text-muted-foreground f-text-xs md:inline">
                       noah@example.com
                     </div>
                   </TableCell>
@@ -193,7 +193,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     <div class="font-medium">
                       Emma Brown
                     </div>
-                    <div class="hidden f-text-xs text-muted-foreground md:inline">
+                    <div class="hidden text-muted-foreground f-text-xs md:inline">
                       emma@example.com
                     </div>
                   </TableCell>
@@ -217,7 +217,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                     <div class="font-medium">
                       Liam Johnson
                     </div>
-                    <div class="hidden f-text-xs text-muted-foreground md:inline">
+                    <div class="hidden text-muted-foreground f-text-xs md:inline">
                       liam@example.com
                     </div>
                   </TableCell>
@@ -250,10 +250,10 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                 <AvatarFallback>OM</AvatarFallback>
               </Avatar>
               <div class="grid gap-4">
-                <p class="f-text-xs font-medium leading-none">
+                <p class="font-medium leading-none f-text-xs">
                   Olivia Martin
                 </p>
-                <p class="f-text-xs text-muted-foreground">
+                <p class="text-muted-foreground f-text-xs">
                   olivia.martin@email.com
                 </p>
               </div>
@@ -266,10 +266,10 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                 <AvatarFallback>JL</AvatarFallback>
               </Avatar>
               <div class="grid gap-4">
-                <p class="f-text-xs font-medium leading-none">
+                <p class="font-medium leading-none f-text-xs">
                   Jackson Lee
                 </p>
-                <p class="f-text-xs text-muted-foreground">
+                <p class="text-muted-foreground f-text-xs">
                   jackson.lee@email.com
                 </p>
               </div>
@@ -282,10 +282,10 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                 <AvatarFallback>IN</AvatarFallback>
               </Avatar>
               <div class="grid gap-4">
-                <p class="f-text-xs font-medium leading-none">
+                <p class="font-medium leading-none f-text-xs">
                   Isabella Nguyen
                 </p>
-                <p class="f-text-xs text-muted-foreground">
+                <p class="text-muted-foreground f-text-xs">
                   isabella.nguyen@email.com
                 </p>
               </div>
@@ -298,10 +298,10 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                 <AvatarFallback>WK</AvatarFallback>
               </Avatar>
               <div class="grid gap-4">
-                <p class="f-text-xs font-medium leading-none">
+                <p class="font-medium leading-none f-text-xs">
                   William Kim
                 </p>
-                <p class="f-text-xs text-muted-foreground">
+                <p class="text-muted-foreground f-text-xs">
                   will@email.com
                 </p>
               </div>
@@ -314,10 +314,10 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
                 <AvatarFallback>SD</AvatarFallback>
               </Avatar>
               <div class="grid gap-4">
-                <p class="f-text-xs font-medium leading-none">
+                <p class="font-medium leading-none f-text-xs">
                   Sofia Davis
                 </p>
-                <p class="f-text-xs text-muted-foreground">
+                <p class="text-muted-foreground f-text-xs">
                   sofia.davis@email.com
                 </p>
               </div>

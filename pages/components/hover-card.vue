@@ -5,7 +5,7 @@
   <div class="flex flex-col gap-16">
     <div class="grid gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Hover Card
         </h2>
         <p class="text-muted-foreground">
@@ -54,7 +54,7 @@
                     <AvatarFallback>VC</AvatarFallback>
                   </Avatar>
                   <div class="space-y-4">
-                    <h4 class="f-text-xs font-semibold">
+                    <h4 class="font-semibold f-text-xs">
                       @vuejs
                     </h4>
                     <p class="f-text-xs">
@@ -62,7 +62,7 @@
                     </p>
                     <div class="flex items-center pt-8">
                       <Icon name="radix-icons:calendar" class="mr-8 h-16 w-16 opacity-70" />
-                      <span class="f-text-2xs text-muted-foreground">
+                      <span class="text-muted-foreground f-text-2xs">
                         Joined January 2014
                       </span>
                     </div>

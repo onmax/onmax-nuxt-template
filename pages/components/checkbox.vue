@@ -5,7 +5,7 @@
   <div class="flex flex-col gap-16">
     <div class="grid gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Checkbox
         </h2>
         <p class="text-muted-foreground">
@@ -45,7 +45,7 @@
               <Checkbox id="terms" />
               <label
                 for="terms"
-                class="f-text-xs font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                class="font-medium leading-none f-text-xs peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
               >
                 Accept terms and conditions
               </label>
@@ -64,11 +64,11 @@
               <div class="grid gap-6 leading-none">
                 <label
                   for="terms1"
-                  class="f-text-xs font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  class="font-medium leading-none f-text-xs peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                 >
                   Accept terms and conditions
                 </label>
-                <p class="f-text-xs text-muted-foreground">
+                <p class="text-muted-foreground f-text-xs">
                   You agree to our Terms of Service and Privacy Policy.
                 </p>
               </div>

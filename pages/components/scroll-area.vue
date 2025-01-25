@@ -8,7 +8,7 @@ const tags = Array.from({ length: 50 }).map(
   <div class="flex flex-col gap-16">
     <div class="grid gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Scroll-area
         </h2>
         <p class="text-muted-foreground">
@@ -46,7 +46,7 @@ const tags = Array.from({ length: 50 }).map(
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <ScrollArea class="h-288 w-192 border f-rounded">
               <div class="p-16">
-                <h4 class="mb-16 f-text-xs font-medium leading-none">
+                <h4 class="mb-16 font-medium leading-none f-text-xs">
                   Tags
                 </h4>
 

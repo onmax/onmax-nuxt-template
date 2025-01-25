@@ -5,7 +5,7 @@
   <div class="flex flex-col gap-16">
     <div class="grid gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Context Menu
         </h2>
         <p class="text-muted-foreground">
@@ -42,7 +42,7 @@
         <CardContent>
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <ContextMenu>
-              <ContextMenuTrigger class="h-[150px] w-[300px] flex items-center justify-center border f-rounded border-dashed f-text-xs">
+              <ContextMenuTrigger class="h-[150px] w-[300px] flex items-center justify-center border border-dashed f-text-xs f-rounded">
                 Right click here
               </ContextMenuTrigger>
               <ContextMenuContent class="w-256">

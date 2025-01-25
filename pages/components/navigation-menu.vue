@@ -44,7 +44,7 @@ const components: { title: string, href: string, description: string }[] = [
   <div class="flex flex-col gap-16">
     <div class="grid gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Navigation Menu
         </h2>
         <p class="text-muted-foreground">
@@ -89,14 +89,14 @@ const components: { title: string, href: string, description: string }[] = [
                       <li class="row-span-3">
                         <NavigationMenuLink as-child>
                           <NuxtLink
-                            class="h-full w-full flex flex-col select-none justify-end f-rounded from-muted/50 to-muted bg-gradient-to-b p-24 no-underline outline-none focus:shadow-448"
+                            class="focus:shadow-448 h-full w-full flex flex-col select-none justify-end from-muted/50 to-muted bg-gradient-to-b p-24 no-underline outline-none f-rounded"
                             to="/"
                           >
                             <img src="https://www.radix-vue.com/logo.svg" class="h-24 w-24" alt="radix-logo">
-                            <div class="mb-8 mt-16 f-text-md font-medium">
+                            <div class="mb-8 mt-16 font-medium f-text-md">
                               shadcn/ui
                             </div>
-                            <p class="f-text-xs text-muted-foreground leading-tight">
+                            <p class="text-muted-foreground leading-tight f-text-xs">
                               Beautifully designed components built with Radix UI and
                               Tailwind CSS.
                             </p>

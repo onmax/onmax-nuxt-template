@@ -40,7 +40,7 @@ const onSubmit = handleSubmit((values) => {
   <div class="flex flex-col gap-16">
     <div class="grid gap-8">
       <div>
-        <h2 class="f-text-xl font-bold tracking-tight">
+        <h2 class="font-bold tracking-tight f-text-xl">
           Form
         </h2>
         <p class="text-muted-foreground">
@@ -121,7 +121,7 @@ const onSubmit = handleSubmit((values) => {
                 </FormItem>
               </FormField>
               <FormField v-slot="{ value, handleChange }" type="checkbox" name="mobile">
-                <FormItem class="flex flex-row items-start gap-x-3 border f-rounded p-16 shadow space-y-0">
+                <FormItem class="flex flex-row items-start gap-x-3 border p-16 shadow f-rounded space-y-0">
                   <FormControl>
                     <Checkbox :checked="value" @update:checked="handleChange" />
                   </FormControl>
