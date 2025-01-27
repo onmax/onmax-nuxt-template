@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
   layout: 'blank',
-  auth: false,
+  auth: Auth.Guest,
 })
 </script>
 

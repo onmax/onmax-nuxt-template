@@ -1,6 +1,7 @@
 <script setup>
 definePageMeta({
   layout: 'blank',
+  auth: false,
 })
 
 const router = useRouter()
@@ -9,7 +10,7 @@ const router = useRouter()
 <template>
   <div class="h-svh">
     <div class="m-auto h-full w-full flex flex-col items-center justify-center gap-8">
-      <h1 class="font-bold leading-tight f-text-2xl">
+      <h1 class="font-bold leading-tight f-text-4xl">
         404
       </h1>
       <span class="font-medium">Oops! Page Not Found!</span>
