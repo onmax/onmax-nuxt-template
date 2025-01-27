@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { themes } from '@/lib/registry/themes'
+import { themes } from '~/utils/registry/themes'
 
 const { theme, radius, setTheme, setRadius } = useCustomize()
 

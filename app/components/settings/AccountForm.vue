@@ -64,7 +64,7 @@ async function onSubmit(values: any) {
     </p>
   </div>
   <Separator />
-  <Form v-slot="{ setFieldValue }" :validation-schema="accountFormSchema" class="space-y-422" @submit="onSubmit">
+  <Form v-slot="{ setFieldValue }" :validation-schema="accountFormSchema" class="space-y-422" @submit.prevent="onSubmit">
     <FormField v-slot="{ componentField }" name="name">
       <FormItem>
         <FormLabel>Name</FormLabel>

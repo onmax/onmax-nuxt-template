@@ -5,6 +5,7 @@ import type {
 } from 'better-auth/client'
 import type { RouteLocationRaw } from 'vue-router'
 import { createAuthClient } from 'better-auth/client'
+import { consola } from 'consola'
 import { defu } from 'defu'
 
 interface RuntimeAuthConfig {
@@ -20,15 +21,16 @@ export function useAuth() {
 
   const options = defu(
     useRuntimeConfig().public.auth as Partial<RuntimeAuthConfig>,
-    { redirectUserTo: '/', redirectGuestTo: '/login' },
+    { redirectUserTo: '/', redirectGuestTo: '/' },
   )
 
   const session = useState<InferSessionFromClient<ClientOptions> | null>('auth:session', () => null)
   const user = useState<InferUserFromClient<ClientOptions> | null>('auth:user', () => null)
   const sessionFetching = import.meta.server ? ref(false) : useState('auth:sessionFetching', () => false)
 
-  const fetchSession = async () => {
+  async function fetchSession() {
     if (sessionFetching.value) {
+      consola.warn('[better-auth] fetchSession() called while fetching session')
       return
     }
     sessionFetching.value = true
@@ -47,21 +49,21 @@ export function useAuth() {
     })
   }
 
+  async function signOut(options: { redirectTo?: RouteLocationRaw } = {}) {
+    await client.signOut()
+    session.value = null
+    user.value = null
+    const redirectTo = useRuntimeConfig().public.auth.redirectGuestTo || options.redirectTo || '/'
+    await navigateTo(redirectTo)
+  }
+
   return {
     session,
     user,
     loggedIn: computed(() => !!session.value),
     signIn: client.signIn,
     signUp: client.signUp,
-    async signOut({ redirectTo }: { redirectTo?: RouteLocationRaw } = {}) {
-      const res = await client.signOut()
-      session.value = null
-      user.value = null
-      if (redirectTo) {
-        await navigateTo(redirectTo)
-      }
-      return res
-    },
+    signOut,
     options,
     fetchSession,
     client,

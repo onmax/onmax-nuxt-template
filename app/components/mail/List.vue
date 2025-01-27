@@ -22,7 +22,7 @@ function getBadgeVariantFromLabel(label: string) {
 </script>
 
 <template>
-  <ScrollArea class="h-[calc(100dvh-282px-206px-3rem-53px)] flex">
+  <ScrollArea class="h-[calc(100dvh-72px-56px-3rem-53px)] flex">
     <div class="flex flex-1 flex-col gap-8 p-16 pt-0">
       <TransitionGroup name="list" appear>
         <button

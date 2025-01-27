@@ -1,5 +1,3 @@
-import { env } from 'node:process'
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -34,13 +32,9 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    betterAuth: {
-      url: env.BETTER_AUTH_URL,
-      secret: env.BETTER_AUTH_SECRET,
-    },
     github: {
-      clientId: env.GITHUB_CLIENT_ID!,
-      clientSecret: env.GITHUB_CLIENT_SECRET!,
+      clientId: '',
+      clientSecret: '',
     },
     public: {
       auth: {

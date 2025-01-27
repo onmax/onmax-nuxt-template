@@ -67,7 +67,7 @@ const onSubmit = handleSubmit((values) => {
     </p>
   </div>
   <Separator />
-  <form @submit="onSubmit">
+  <form @submit.prevent="onSubmit">
     <FormField name="items">
       <FormItem>
         <div class="mb-16">

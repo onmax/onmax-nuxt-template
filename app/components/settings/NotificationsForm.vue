@@ -44,7 +44,7 @@ const onSubmit = handleSubmit((values) => {
     </p>
   </div>
   <Separator />
-  <form class="space-y-422" @submit="onSubmit">
+  <form class="space-y-422" @submit.prevent="onSubmit">
     <FormField v-slot="{ componentField }" type="radio" name="type">
       <FormItem class="space-y-42">
         <FormLabel>Notify me about...</FormLabel>

@@ -3,13 +3,13 @@
   "type": "module",
   "version": "0.1.2",
   "packageManager": "pnpm@9.15.4",
-  "description": "Shadcn Dashboard built with Nuxt",
-  "author": "Dian Pratama <dianpratama2@gmail.com>",
+  "description": "NuxtHub + UnoCSS + BetterAuth + Shadcn Dashboard",
+  "author": "onmax",
   "license": "MIT",
-  "homepage": "https://dashboard.dianprata.com/",
+  "homepage": "https://onmax.github.io/onmax-nuxt-template/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dianprata/nuxt-shadcn-dashboard.git"
+    "url": "git+https://github.com/onmax/onmax-nuxt-template.git"
   },
   "keywords": [
     "dashboard",
@@ -50,14 +50,14 @@
     "@tanstack/vue-table": "^8.20.5",
     "@unovis/ts": "^1.5.0",
     "@unovis/vue": "^1.5.0",
-    "better-auth": "0.7.6-beta.2",
+    "better-auth": "1.1.14",
     "defu": "^6.1.4",
     "embla-carousel": "^8.5.2",
     "embla-carousel-vue": "^8.5.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.1.0",
-    "@iconify-json/lucide": "^1.2.24",
+    "@iconify-json/lucide": "^1.2.25",
     "@nuxt/eslint": "^0.7.5",
     "@nuxt/icon": "^1.10.3",
     "@nuxthub/core": "0.8.14",
@@ -74,7 +74,7 @@
     "date-fns": "^4.1.0",
     "eslint": "^9.19.0",
     "eslint-plugin-format": "^1.0.1",
-    "lint-staged": "^15.4.2",
+    "lint-staged": "^15.4.3",
     "lucide-vue-next": "^0.474.0",
     "nuxt": "^3.15.3",
     "radix-vue": "^1.9.12",

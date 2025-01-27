@@ -13,7 +13,7 @@ async function onSubmit(event: Event) {
 </script>
 
 <template>
-  <form @submit="onSubmit">
+  <form @submit.prevent="onSubmit">
     <div class="grid gap-16">
       <div class="grid gap-8">
         <Label for="email">

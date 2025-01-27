@@ -76,7 +76,7 @@ const onSubmit = handleSubmit((values) => {
         </CardHeader>
         <CardContent>
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
-            <form class="w-full md:w-2/3 space-y-24" @submit="onSubmit">
+            <form class="w-full md:w-2/3 space-y-24" @submit.prevent="onSubmit">
               <FormField v-slot="{ componentField }" name="username" :validate-on-blur="!isFieldDirty">
                 <FormItem>
                   <FormLabel>Username</FormLabel>

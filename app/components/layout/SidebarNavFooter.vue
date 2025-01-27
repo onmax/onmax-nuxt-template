@@ -11,9 +11,7 @@ defineProps<{
 
 const { isMobile, setOpenMobile } = useSidebar()
 
-function handleLogout() {
-  navigateTo('/login')
-}
+const { signOut } = useAuth()
 
 const showModalTheme = ref(false)
 </script>
@@ -95,7 +93,7 @@ const showModalTheme = ref(false)
             </DropdownMenuItem>
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
-          <DropdownMenuItem @click="handleLogout">
+          <DropdownMenuItem @click="signOut">
             <Icon name="i-lucide-log-out" />
             Log out
           </DropdownMenuItem>

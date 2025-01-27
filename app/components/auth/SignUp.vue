@@ -1,13 +1,35 @@
 <script setup lang="ts">
 import { cn } from '@/lib/utils'
 import { Loader2 } from 'lucide-vue-next'
+import { useToast } from '../ui/toast'
 
-const { signUp } = useAuth()
+const { signUp, signIn } = useAuth()
+const { toast } = useToast()
+
+const email = ref('')
+const password = ref('')
+const name = ref('')
+const isLoading = ref(false)
+
+async function onSubmit() {
+  if (isLoading.value)
+    return
+  isLoading.value = true
+  const { error } = await signUp.email({ email: email.value, password: password.value, name: name.value })
+  isLoading.value = false
+  if (error) {
+    toast({ title: error.message || 'Something went wrong' })
+    return
+  }
+
+  toast({ title: `You have been signed up!` })
+  await navigateTo('/')
+}
 </script>
 
 <template>
   <div :class="cn('grid gap-24', $attrs.class ?? '')">
-    <form @submit="onSubmit">
+    <form @submit.prevent="onSubmit">
       <div class="grid gap-16">
         <div class="grid gap-8">
           <Label for="name">
@@ -57,7 +79,7 @@ const { signUp } = useAuth()
     </form>
     <Separator label="Or continue with" />
     <div class="flex items-center gap-16">
-      <Button variant="outline" class="w-full gap-8" @click="signUp.social({ provider: 'github', callbackURL: '/' })">
+      <Button variant="outline" class="w-full gap-8" @click="signIn.social({ provider: 'github', callbackURL: '/' })">
         <Icon name="i-lucide:github" size-16 />
         GitHub
       </Button>

@@ -29,9 +29,10 @@ useServerHead({
   },
 })
 
-const title = 'Nuxt Shadcn UI - Dashboard Template'
-const description = 'This dashboard, built with Nuxt, Shadcn UI, and UnoCSS. It includes a dark mode toggle and is optimized for performance and data efficiency.'
+const title = 'NuxtHub Shadcn UnoCSS - Dashboard Template'
+const description = 'This dashboard, built with Nuxt, Shadcn UI, and UnoCSS, NuxtHub. It includes auth, dark mode toggle and is optimized for performance and data efficiency.'
 
+// TODO Redo images
 useSeoMeta({
   title,
   description,

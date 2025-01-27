@@ -18,7 +18,7 @@ import {
   getSortedRowModel,
   useVueTable,
 } from '@tanstack/vue-table'
-import { valueUpdater } from '../../../lib/utils'
+import { valueUpdater } from '../../../utils'
 import DataTablePagination from './DataTablePagination.vue'
 import DataTableToolbar from './DataTableToolbar.vue'
 
