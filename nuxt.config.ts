@@ -16,6 +16,7 @@ export default defineNuxtConfig({
   hub: {
     database: true,
     kv: true,
+    ai: true,
   },
 
   css: [
