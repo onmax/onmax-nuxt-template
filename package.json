@@ -50,7 +50,7 @@
     "@tanstack/vue-table": "^8.20.5",
     "@unovis/ts": "^1.5.0",
     "@unovis/vue": "^1.5.0",
-    "better-auth": "1.1.14",
+    "better-auth": "0.7.6-beta.2",
     "defu": "^6.1.4",
     "embla-carousel": "^8.5.2",
     "embla-carousel-vue": "^8.5.2"
