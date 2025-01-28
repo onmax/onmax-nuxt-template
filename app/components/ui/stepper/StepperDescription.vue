@@ -2,7 +2,6 @@
 import type { StepperDescriptionProps } from 'radix-vue'
 import type { HTMLAttributes } from 'vue'
 
-import { cn } from '@/lib/utils'
 import { StepperDescription, useForwardProps } from 'radix-vue'
 import { computed } from 'vue'
 

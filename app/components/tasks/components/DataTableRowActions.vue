@@ -20,7 +20,7 @@ const task = computed(() => taskSchema.parse(props.row.original))
         variant="ghost"
         class="h-32 w-32 flex p-0 data-open:bg-muted"
       >
-        <Icon name="i-radix-icons-dots-horizontal" class="h-16 w-16" />
+        <Icon name="i-radix-icons-dots-horizontal" size-16 class="" />
         <span class="sr-only">Open menu</span>
       </Button>
     </DropdownMenuTrigger>

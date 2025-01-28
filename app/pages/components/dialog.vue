@@ -132,7 +132,7 @@ async function handleCopyLink() {
                   </div>
                   <Button type="submit" size="sm" class="px-12" @click="handleCopyLink">
                     <span class="sr-only">Copy</span>
-                    <Icon name="radix-icons:copy" class="h-16 w-16" />
+                    <Icon name="radix-icons:copy" size-16 class="" />
                   </Button>
                 </div>
                 <DialogFooter class="sm:justify-start">

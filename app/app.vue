@@ -51,13 +51,12 @@ const router = useRouter()
 defineShortcuts({
   'G-H': () => router.push('/'),
   'G-E': () => router.push('/email'),
+  'G-C': () => router.push('/chat'),
 })
-
-const useIdFunction = () => useId()
 </script>
 
 <template>
-  <ConfigProvider :use-id="useIdFunction">
+  <ConfigProvider :use-id>
     <div vaul-drawer-wrapper>
       <NuxtLayout>
         <NuxtPage />

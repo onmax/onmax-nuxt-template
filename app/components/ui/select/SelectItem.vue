@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { SelectItemProps } from 'radix-vue'
 import type { HTMLAttributes } from 'vue'
-import { cn } from '@/lib/utils'
+
 import {
   SelectItem,
   SelectItemIndicator,
@@ -34,7 +34,7 @@ const forwardedProps = useForwardProps(delegatedProps)
   >
     <span class="absolute right-8 h-14 w-14 flex items-center justify-center">
       <SelectItemIndicator>
-        <Icon name="i-radix-icons-check" class="h-16 w-16" />
+        <Icon name="i-radix-icons-check" size-16 class="" />
       </SelectItemIndicator>
     </span>
 

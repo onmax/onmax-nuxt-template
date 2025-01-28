@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { cn } from '@/lib/utils'
 import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import { h } from 'vue'
@@ -108,11 +107,11 @@ const onSubmit = handleSubmit((values) => {
                     <div class="h-8 w-100 bg-[#ecedef] f-rounded-xs" />
                   </div>
                   <div class="flex items-center bg-white p-8 shadow-sm f-rounded-xs space-x-8">
-                    <div class="h-16 w-16 rounded-full bg-[#ecedef]" />
+                    <div size-16 class="rounded-full bg-[#ecedef]" />
                     <div class="h-8 w-100 bg-[#ecedef] f-rounded-xs" />
                   </div>
                   <div class="flex items-center bg-white p-8 shadow-sm f-rounded-xs space-x-8">
-                    <div class="h-16 w-16 rounded-full bg-[#ecedef]" />
+                    <div size-16 class="rounded-full bg-[#ecedef]" />
                     <div class="h-8 w-100 bg-[#ecedef] f-rounded-xs" />
                   </div>
                 </div>
@@ -134,11 +133,11 @@ const onSubmit = handleSubmit((values) => {
                     <div class="h-8 w-100 bg-slate-400 f-rounded-xs" />
                   </div>
                   <div class="flex items-center bg-slate-800 p-8 shadow-sm f-rounded-xs space-x-8">
-                    <div class="h-16 w-16 rounded-full bg-slate-400" />
+                    <div size-16 class="rounded-full bg-slate-400" />
                     <div class="h-8 w-100 bg-slate-400 f-rounded-xs" />
                   </div>
                   <div class="flex items-center bg-slate-800 p-8 shadow-sm f-rounded-xs space-x-8">
-                    <div class="h-16 w-16 rounded-full bg-slate-400" />
+                    <div size-16 class="rounded-full bg-slate-400" />
                     <div class="h-8 w-100 bg-slate-400 f-rounded-xs" />
                   </div>
                 </div>

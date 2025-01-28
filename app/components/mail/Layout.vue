@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { Mail } from './data/mails'
 import type { LinkProp } from '~/components/mail/Nav.vue'
-import { cn } from '@/lib/utils'
+
 import { useMediaQuery } from '@vueuse/core'
 import { Search } from 'lucide-vue-next'
 import { ConfigProvider } from 'radix-vue'
@@ -126,14 +126,6 @@ const links2: LinkProp[] = [
   },
 ]
 
-function onCollapse() {
-  isCollapsed.value = true
-}
-
-function onExpand() {
-  isCollapsed.value = false
-}
-
 const defaultCollapse = useMediaQuery('(max-width: 768px)')
 
 watch(() => defaultCollapse.value, () => {
@@ -157,8 +149,8 @@ watch(() => defaultCollapse.value, () => {
           :min-size="15"
           :max-size="20"
           :class="cn(isCollapsed && 'min-w-50 transition-all duration-300 ease-in-out')"
-          @expand="onExpand"
-          @collapse="onCollapse"
+          @expand="isCollapsed = false"
+          @collapse="isCollapsed = true"
         >
           <div :class="cn('flex h-56 items-center justify-center', isCollapsed ? 'h-56' : 'px-8')">
             <MailAccountSwitcher :is-collapsed="isCollapsed" :accounts="accounts" />

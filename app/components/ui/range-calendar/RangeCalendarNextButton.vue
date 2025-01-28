@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { RangeCalendarNextProps } from 'radix-vue'
 import type { HTMLAttributes } from 'vue'
-import { cn } from '@/lib/utils'
+
 import { ChevronRight } from 'lucide-vue-next'
 import { RangeCalendarNext, useForwardProps } from 'radix-vue'
 import { computed } from 'vue'
@@ -28,7 +28,7 @@ const forwardedProps = useForwardProps(delegatedProps)
     v-bind="forwardedProps"
   >
     <slot>
-      <ChevronRight class="h-16 w-16" />
+      <ChevronRight size-16 class="" />
     </slot>
   </RangeCalendarNext>
 </template>

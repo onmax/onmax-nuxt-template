@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { Mail } from './data/mails'
-import { cn } from '@/lib/utils'
+
 import { formatDistanceToNow } from 'date-fns'
 
 interface MailListProps {

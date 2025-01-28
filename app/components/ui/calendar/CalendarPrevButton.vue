@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { CalendarPrevProps } from 'radix-vue'
 import type { HTMLAttributes } from 'vue'
-import { cn } from '@/lib/utils'
+
 import { CalendarPrev, useForwardProps } from 'radix-vue'
 import { computed } from 'vue'
 import { buttonVariants } from '../button'
@@ -27,7 +27,7 @@ const forwardedProps = useForwardProps(delegatedProps)
     v-bind="forwardedProps"
   >
     <slot>
-      <Icon name="radix-icons:chevron-left" class="h-16 w-16" />
+      <Icon name="radix-icons:chevron-left" size-16 class="" />
     </slot>
   </CalendarPrev>
 </template>

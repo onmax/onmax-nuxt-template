@@ -82,7 +82,7 @@ const data = [
                         :disabled="goal <= 200"
                         @click="goal -= 10"
                       >
-                        <Icon name="radix-icons:minus" class="h-16 w-16" />
+                        <Icon name="radix-icons:minus" size-16 class="" />
                         <span class="sr-only">Decrease</span>
                       </Button>
                       <div class="flex-1 text-center">
@@ -100,7 +100,7 @@ const data = [
                         :disabled="goal >= 400"
                         @click="goal += 10"
                       >
-                        <Icon name="radix-icons:plus" class="h-16 w-16" />
+                        <Icon name="radix-icons:plus" size-16 class="" />
                         <span class="sr-only">Increase</span>
                       </Button>
                     </div>

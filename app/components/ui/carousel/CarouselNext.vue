@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { WithClassAsProps } from './interface'
-import { cn } from '@/lib/utils'
+
 import { ArrowRight } from 'lucide-vue-next'
 import { Button } from '../button'
 import { useCarousel } from './useCarousel'
@@ -24,7 +24,7 @@ const { orientation, canScrollNext, scrollNext } = useCarousel()
     @click="scrollNext"
   >
     <slot>
-      <ArrowRight class="h-16 w-16 text-current" />
+      <ArrowRight size-16 class="text-current" />
     </slot>
   </Button>
 </template>

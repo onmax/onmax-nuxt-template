@@ -1,44 +1,43 @@
 <script setup lang="ts">
 const route = useRoute()
+const pageName = useState<string>('page-name')
 
-function setLinks() {
-  if (route.fullPath === '/') {
+const links = computed(() => {
+  if (route.fullPath === '/')
     return [{ title: 'Home', href: '/' }]
-  }
-  return route.fullPath.split('/').map((item, index) => {
+
+  const parts = route.fullPath.split('/')
+  return parts.map((item, index) => {
     const str = item.replace(/-/g, ' ')
-    const title = str
-      .split(' ')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-      .join(' ')
+
+    let title = ''
+
+    if (index === parts.length - 1 && pageName.value) {
+      title = pageName.value!
+    }
+    else {
+      title = str
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ')
+    }
 
     return {
       title: index > 0 ? title : 'Home',
       href: index > 0 ? `/${item}` : '/',
     }
   })
-}
-
-const links = ref<{
-  title: string
-  href: string
-}[]>(setLinks())
-
-watch(() => route.fullPath, (val) => {
-  if (val) {
-    links.value = setLinks()
-  }
 })
 </script>
 
 <template>
   <header class="sticky top-0 z-10 h-53 flex items-center gap-16 border-b bg-background px-16 md:px-24">
-    <div class="w-full flex items-center gap-16">
+    <div w-full flex="~ items-center gap-16">
       <SidebarTrigger />
-      <Separator orientation="vertical" class="h-16" />
-      <BaseBreadcrumbCustom :links="links" />
+      <Separator orientation="vertical" h-16 />
+      <BaseBreadcrumbCustom :links />
     </div>
-    <div class="ml-auto">
+    <div ml-auto>
       <slot />
     </div>
   </header>

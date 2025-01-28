@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { cn } from '@/lib/utils'
 import { Loader2 } from 'lucide-vue-next'
 import { useToast } from '../ui/toast'
 

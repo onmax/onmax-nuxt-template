@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { DialogContentEmits, DialogContentProps } from 'radix-vue'
 import type { HTMLAttributes } from 'vue'
-import { cn } from '@/lib/utils'
+
 import { X } from 'lucide-vue-next'
 import {
   DialogClose,
@@ -43,7 +43,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
       <DialogClose
         class="absolute right-16 top-16 opacity-70 ring-offset-background transition-opacity f-rounded-xs disabled:pointer-events-none data-open:bg-accent data-open:text-muted-foreground hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring"
       >
-        <X class="h-16 w-16" />
+        <X size-16 class="" />
         <span class="sr-only">Close</span>
       </DialogClose>
     </DialogContent>

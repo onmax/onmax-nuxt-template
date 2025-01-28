@@ -32,7 +32,7 @@
         </CardHeader>
         <CardContent>
           <Alert>
-            <Icon name="i-radix-icons-rocket" mode="svg" class="h-16 w-16" />
+            <Icon name="i-radix-icons-rocket" mode="svg" size-16 class="" />
             <AlertTitle>Heads up!</AlertTitle>
             <AlertDescription>
               You can add components to your app using the cli.

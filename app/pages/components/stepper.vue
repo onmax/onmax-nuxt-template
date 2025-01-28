@@ -89,7 +89,7 @@ const steps = [
               >
                 <StepperTrigger>
                   <StepperIndicator>
-                    <Icon :name="item.icon" class="h-16 w-16" />
+                    <Icon :name="item.icon" size-16 class="" />
                   </StepperIndicator>
                   <div class="flex flex-col">
                     <StepperTitle>

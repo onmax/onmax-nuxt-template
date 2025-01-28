@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { SelectTriggerProps } from 'radix-vue'
 import type { HTMLAttributes } from 'vue'
-import { cn } from '@/lib/utils'
+
 import { SelectIcon, SelectTrigger, useForwardProps } from 'radix-vue'
 import { computed } from 'vue'
 
@@ -26,7 +26,7 @@ const forwardedProps = useForwardProps(delegatedProps)
   >
     <slot />
     <SelectIcon as-child>
-      <Icon name="i-radix-icons-caret-sort" class="h-16 w-16 opacity-50" />
+      <Icon name="i-radix-icons-caret-sort" size-16 class="opacity-50" />
     </SelectIcon>
   </SelectTrigger>
 </template>

@@ -2,7 +2,7 @@
 import type { BulletLegendItemInterface } from '@unovis/ts'
 import type { Component } from 'vue'
 import type { BaseChartProps } from '.'
-import { cn } from '@/lib/utils'
+
 import { Axis, GroupedBar, StackedBar } from '@unovis/ts'
 import { VisAxis, VisGroupedBar, VisStackedBar, VisXYContainer } from '@unovis/vue'
 import { useMounted } from '@vueuse/core'

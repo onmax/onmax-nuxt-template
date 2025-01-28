@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { Column } from '@tanstack/vue-table'
 import type { Task } from '../data/schema'
-import { cn } from '@/lib/utils'
 
 interface DataTableColumnHeaderProps {
   column: Column<Task, any>

@@ -13,9 +13,10 @@ declare module 'vue-router' {
 }
 
 export default defineNuxtRouteMiddleware(async (to) => {
-  const authOption = to.meta?.auth ?? Auth.User // Routes requiring auth by default
-  if (!authOption)
+  if (to.path === '/api/migrate')
     return
+
+  const authOption = to.meta?.auth ?? Auth.User // Routes requiring auth by default
 
   const { loggedIn, fetchSession, options: { redirectGuestTo, redirectUserTo } } = useAuth()
 

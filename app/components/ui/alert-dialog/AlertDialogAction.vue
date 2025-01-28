@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { AlertDialogActionProps } from 'radix-vue'
 import type { HTMLAttributes } from 'vue'
-import { cn } from '@/lib/utils'
+
 import { AlertDialogAction } from 'radix-vue'
 import { computed } from 'vue'
 import { buttonVariants } from '../button'

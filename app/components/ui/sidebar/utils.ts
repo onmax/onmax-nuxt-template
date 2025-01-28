@@ -1,4 +1,4 @@
-import type { ComputedRef, Ref } from 'vue'
+import type { ComputedRef, ModelRef, Ref } from 'vue'
 import { createContext } from 'radix-vue'
 
 export const SIDEBAR_COOKIE_NAME = 'sidebar:state'
@@ -10,7 +10,7 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = 'b'
 
 export const [useSidebar, provideSidebarContext] = createContext<{
   state: ComputedRef<'expanded' | 'collapsed'>
-  open: Ref<boolean>
+  open: ModelRef<boolean>
   setOpen: (value: boolean) => void
   isMobile: Ref<boolean>
   openMobile: Ref<boolean>

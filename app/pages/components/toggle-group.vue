@@ -43,13 +43,13 @@
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <ToggleGroup type="multiple">
               <ToggleGroupItem value="bold" aria-label="Toggle bold">
-                <Icon name="i-radix-icons-font-bold" class="h-16 w-16" />
+                <Icon name="i-radix-icons-font-bold" size-16 class="" />
               </ToggleGroupItem>
               <ToggleGroupItem value="italic" aria-label="Toggle italic">
-                <Icon name="i-radix-icons-font-italic" class="h-16 w-16" />
+                <Icon name="i-radix-icons-font-italic" size-16 class="" />
               </ToggleGroupItem>
               <ToggleGroupItem value="underline" aria-label="Toggle underline">
-                <Icon name="i-radix-icons-underline" class="h-16 w-16" />
+                <Icon name="i-radix-icons-underline" size-16 class="" />
               </ToggleGroupItem>
             </ToggleGroup>
           </div>
@@ -63,13 +63,13 @@
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <ToggleGroup type="multiple" variant="outline">
               <ToggleGroupItem value="bold" aria-label="Toggle bold">
-                <Icon name="i-radix-icons-font-bold" class="h-16 w-16" />
+                <Icon name="i-radix-icons-font-bold" size-16 class="" />
               </ToggleGroupItem>
               <ToggleGroupItem value="italic" aria-label="Toggle italic">
-                <Icon name="i-radix-icons-font-italic" class="h-16 w-16" />
+                <Icon name="i-radix-icons-font-italic" size-16 class="" />
               </ToggleGroupItem>
               <ToggleGroupItem value="underline" aria-label="Toggle underline">
-                <Icon name="i-radix-icons-underline" class="h-16 w-16" />
+                <Icon name="i-radix-icons-underline" size-16 class="" />
               </ToggleGroupItem>
             </ToggleGroup>
           </div>
@@ -83,13 +83,13 @@
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <ToggleGroup type="single">
               <ToggleGroupItem value="bold" aria-label="Toggle bold">
-                <Icon name="i-radix-icons-font-bold" class="h-16 w-16" />
+                <Icon name="i-radix-icons-font-bold" size-16 class="" />
               </ToggleGroupItem>
               <ToggleGroupItem value="italic" aria-label="Toggle italic">
-                <Icon name="i-radix-icons-font-italic" class="h-16 w-16" />
+                <Icon name="i-radix-icons-font-italic" size-16 class="" />
               </ToggleGroupItem>
               <ToggleGroupItem value="underline" aria-label="Toggle underline">
-                <Icon name="i-radix-icons-underline" class="h-16 w-16" />
+                <Icon name="i-radix-icons-underline" size-16 class="" />
               </ToggleGroupItem>
             </ToggleGroup>
           </div>

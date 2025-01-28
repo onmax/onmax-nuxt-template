@@ -2,7 +2,6 @@
 import type { StepperSeparatorProps } from 'radix-vue'
 import type { HTMLAttributes } from 'vue'
 
-import { cn } from '@/lib/utils'
 import { StepperSeparator, useForwardProps } from 'radix-vue'
 import { computed } from 'vue'
 

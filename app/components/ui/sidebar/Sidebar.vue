@@ -2,7 +2,7 @@
 import type { HTMLAttributes } from 'vue'
 import Sheet from '@/components/ui/sheet/Sheet.vue'
 import SheetContent from '@/components/ui/sheet/SheetContent.vue'
-import { cn } from '@/lib/utils'
+
 import { SIDEBAR_WIDTH_MOBILE, useSidebar } from './utils'
 
 defineOptions({

@@ -20,7 +20,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
             <CardTitle class="font-medium f-text-xs">
               Total Revenue
             </CardTitle>
-            <DollarSign class="h-16 w-16 text-muted-foreground" />
+            <DollarSign size-16 class="text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div class="font-bold f-text-xl">
@@ -36,7 +36,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
             <CardTitle class="font-medium f-text-xs">
               Subscriptions
             </CardTitle>
-            <Users class="h-16 w-16 text-muted-foreground" />
+            <Users size-16 class="text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div class="font-bold f-text-xl">
@@ -52,7 +52,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
             <CardTitle class="font-medium f-text-xs">
               Sales
             </CardTitle>
-            <CreditCard class="h-16 w-16 text-muted-foreground" />
+            <CreditCard size-16 class="text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div class="font-bold f-text-xl">
@@ -68,7 +68,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
             <CardTitle class="font-medium f-text-xs">
               Active Now
             </CardTitle>
-            <Activity class="h-16 w-16 text-muted-foreground" />
+            <Activity size-16 class="text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div class="font-bold f-text-xl">
@@ -92,7 +92,7 @@ import { Activity, ArrowUpRight, CreditCard, DollarSign, Users } from 'lucide-vu
             <Button as-child size="sm" class="ml-auto gap-4">
               <a href="#">
                 View All
-                <ArrowUpRight class="h-16 w-16" />
+                <ArrowUpRight size-16 class="" />
               </a>
             </Button>
           </CardHeader>

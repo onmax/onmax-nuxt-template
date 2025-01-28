@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { TagsInputItemDeleteProps } from 'radix-vue'
 import type { HTMLAttributes } from 'vue'
-import { cn } from '@/lib/utils'
+
 import { TagsInputItemDelete, useForwardProps } from 'radix-vue'
 import { computed } from 'vue'
 
@@ -19,7 +19,7 @@ const forwardedProps = useForwardProps(delegatedProps)
 <template>
   <TagsInputItemDelete v-bind="forwardedProps" :class="cn('flex rounded bg-transparent mr-4', props.class)">
     <slot>
-      <Icon name="i-radix-icons-cross-2" class="h-16 w-16" />
+      <Icon name="i-radix-icons-cross-2" size-16 class="" />
     </slot>
   </TagsInputItemDelete>
 </template>

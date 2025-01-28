@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { DropdownMenuCheckboxItemEmits, DropdownMenuCheckboxItemProps } from 'radix-vue'
 import type { HTMLAttributes } from 'vue'
-import { cn } from '@/lib/utils'
+
 import { Check } from 'lucide-vue-next'
 import {
   DropdownMenuCheckboxItem,
@@ -33,7 +33,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
   >
     <span class="absolute left-8 h-14 w-14 flex items-center justify-center">
       <DropdownMenuItemIndicator>
-        <Check class="h-16 w-16" />
+        <Check size-16 class="" />
       </DropdownMenuItemIndicator>
     </span>
     <slot />

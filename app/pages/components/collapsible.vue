@@ -50,7 +50,7 @@
                     @peduarte starred 3 repositories
                   </h4>
                   <Button variant="ghost" size="sm" class="w-36 p-0">
-                    <Icon name="radix-icons:caret-sort" class="h-16 w-16" />
+                    <Icon name="radix-icons:caret-sort" size-16 class="" />
                     <span class="sr-only">Toggle</span>
                   </Button>
                 </div>

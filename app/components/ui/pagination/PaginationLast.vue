@@ -4,7 +4,7 @@ import type { HTMLAttributes } from 'vue'
 import {
   Button,
 } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
+
 import { PaginationLast } from 'radix-vue'
 import { computed } from 'vue'
 

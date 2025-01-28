@@ -42,7 +42,7 @@
         <CardContent>
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <Toggle aria-label="Toggle italic">
-              <Icon name="i-radix-icons-font-bold" class="h-16 w-16" />
+              <Icon name="i-radix-icons-font-bold" size-16 class="" />
             </Toggle>
           </div>
         </CardContent>
@@ -54,7 +54,7 @@
         <CardContent>
           <div class="min-h-400px w-full flex items-center justify-center gap-16 md:min-h-800px">
             <Toggle variant="outline" aria-label="Toggle italic">
-              <Icon name="i-radix-icons-font-italic" class="h-16 w-16" />
+              <Icon name="i-radix-icons-font-italic" size-16 class="" />
             </Toggle>
           </div>
         </CardContent>

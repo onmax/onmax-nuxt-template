@@ -123,6 +123,14 @@ export default defineConfig({
           --sidebar-border: 240 3.7% 15.9%;
           --sidebar-ring: 217.2 91.2% 59.8%;
         }
+
+        h1, h2, h3, h4, h5, h6 {
+          text-wrap: balance;
+        }
+
+        p, li, blockquote {
+          text-wrap: pretty;
+        }
       `,
     },
   ],

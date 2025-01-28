@@ -45,7 +45,7 @@ defineProps<DataTablePaginationProps>()
           @click="table.setPageIndex(0)"
         >
           <span class="sr-only">Go to first page</span>
-          <Icon name="i-radix-icons-double-arrow-left" class="h-16 w-16" />
+          <Icon name="i-radix-icons-double-arrow-left" size-16 class="" />
         </Button>
         <Button
           variant="outline"
@@ -54,7 +54,7 @@ defineProps<DataTablePaginationProps>()
           @click="table.previousPage()"
         >
           <span class="sr-only">Go to previous page</span>
-          <Icon name="i-radix-icons-chevron-left" class="h-16 w-16" />
+          <Icon name="i-radix-icons-chevron-left" size-16 class="" />
         </Button>
         <Button
           variant="outline"
@@ -63,7 +63,7 @@ defineProps<DataTablePaginationProps>()
           @click="table.nextPage()"
         >
           <span class="sr-only">Go to next page</span>
-          <Icon name="i-radix-icons-chevron-right" class="h-16 w-16" />
+          <Icon name="i-radix-icons-chevron-right" size-16 class="" />
         </Button>
         <Button
           variant="outline"
@@ -72,7 +72,7 @@ defineProps<DataTablePaginationProps>()
           @click="table.setPageIndex(table.getPageCount() - 1)"
         >
           <span class="sr-only">Go to last page</span>
-          <Icon name="i-radix-icons-double-arrow-right" class="h-16 w-16" />
+          <Icon name="i-radix-icons-double-arrow-right" size-16 class="" />
         </Button>
       </div>
     </div>

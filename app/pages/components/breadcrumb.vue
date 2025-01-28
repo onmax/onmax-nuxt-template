@@ -122,7 +122,7 @@ const breadcrumbLinks = ref([
                   <DropdownMenu>
                     <DropdownMenuTrigger class="flex items-center gap-4">
                       Components
-                      <ChevronDown class="h-16 w-16" />
+                      <ChevronDown size-16 class="" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="start">
                       <DropdownMenuItem>Documentation</DropdownMenuItem>
